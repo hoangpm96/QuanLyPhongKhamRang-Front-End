@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files --
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/js/Start/calen.js"></script>
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="navbar-header">
+			
+
+			<ul class="nav navbar-nav visible-xs-block">
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+
+				<li class="dropdown">
+					
+					
+					<div class="dropdown-menu dropdown-content">
+						
+
+						<ul class="media-list dropdown-content-body width-350">
+							<li class="media">
+								<div class="media-left">
+									<a href="#" class="btn border-primary text-primary btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-pull-request"></i></a>
+								</div>
+
+								<div class="media-body">
+									Drop the IE <a href="#">specific hacks</a> for temporal inputs
+									<div class="media-annotation">4 minutes ago</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<a href="#" class="btn border-warning text-warning btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-commit"></i></a>
+								</div>
+								
+								<div class="media-body">
+									Add full font overrides for popovers and tooltips
+									<div class="media-annotation">36 minutes ago</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<a href="#" class="btn border-info text-info btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-branch"></i></a>
+								</div>
+								
+								<div class="media-body">
+									<a href="#">Chris Arney</a> created a new <span class="text-semibold">Design</span> branch
+									<div class="media-annotation">2 hours ago</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<a href="#" class="btn border-success text-success btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-merge"></i></a>
+								</div>
+								
+								<div class="media-body">
+									<a href="#">Eugene Kopyov</a> merged <span class="text-semibold">Master</span> and <span class="text-semibold">Dev</span> branches
+									<div class="media-annotation">Dec 18, 18:36</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<a href="#" class="btn border-primary text-primary btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-pull-request"></i></a>
+								</div>
+								
+								<div class="media-body">
+									Have Carousel ignore keyboard events
+									<div class="media-annotation">Dec 12, 05:46</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="dropdown-content-footer">
+							<a href="#" data-popup="tooltip" title="All activity"><i class="icon-menu display-block"></i></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/placeholder.jpg" alt="">
+						<span>NguyenHien</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<div class="sidebar-user">
+						<div class="category-content">
+							<div class="media">
+								<a href="#" class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+								<div class="media-body">
+									<span class="media-heading text-semibold">Nguyen Hien</span>
+									<div class="text-size-mini text-muted">
+										<i class="icon-pin text-size-small"></i> Bs.Duc
+									</div>
+								</div>
+
+								<div class="media-right media-middle">
+									<ul class="icons-list">
+										<li>
+											<a href="#"><i class="icon-cog3"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Trang chủ</span></a></li>
+								<li>
+									<a href="#"><i class="fa fa-medkit"></i> <span>Khám răng</span></a>
+									<ul>
+										<li><a href="BenhMoi.html">Bệnh mới</a></li>
+										<li><a href="BenhCu.html">Bệnh cũ</a></li>
+									</ul>
+								</li>
+								<li><a href="DanhSachBN.html"><i class="icon-list-unordered"></i> <span>Danh sách bệnh nhân </span></a></li>
+								<li><a href="QuanLyChiTieu.html"><i class="glyphicon glyphicon-usd"></i> <span>Quản lý chi tiêu</span></a></li>
+								<!-- /main -->
+								<li>
+									<a href="GuiTinNhan.html"><i class="glyphicon glyphicon-envelope"></i> <span>Gửi tin nhắn</span></a>	
+								</li>
+								<!-- /forms -->
+
+								
+								<li>
+									<a href="#"><i class="glyphicon glyphicon-cog 	"></i> <span>Cài đặt dịch vụ</span></a>
+									<ul>
+										<li><a href="appearance_content_panels.html">Danh sách dịch vụ</a></li>
+										<li><a href="appearance_panel_heading.html">Tạo dịch vụ mới</a></li>
+									</ul>
+								</li>
+								
+								<!-- /appearance -->
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+			
+			<!-- Main content -->
+			<div class="content-wrapper">
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+							<!-- Initial release -->
+							<div class="panel panel-flat" id="release">
+								<div class="panel-heading">
+									<h4 class="panel-title"><b>Danh sách lịch hẹn khám hôm nay</b></h4>
+									
+								</div>
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead>
+										  <tr>
+											<th>Thời gian</th>
+											<th> Ho và tên</th>
+											<th>Nội dung tái khám</th>
+											<th>Bác Sĩ</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td>14h30p,16/11/2017 </td>
+											<td>Nguyễn Văn A</td>
+											<td>
+												Lấy cao răng
+											</td>
+											<td>BS.Đức</td>
+										  </tr>
+										  <tr>
+											<td>14h30p,16/11/2017 </td>
+											<td>Nguyễn Văn A</td>
+											<td>
+												Lấy cao răng
+											</td>
+											<td>BS.Đức</td>
+										  </tr>
+										  <tr>
+											<td>14h30p,16/11/2017 </td>
+											<td>Nguyễn Văn A</td>
+											<td>
+												Lấy cao răng
+											</td>
+											<td>BS.Đức</td>
+										  </tr>
+										  <tr>
+											<td>14h30p,16/11/2017 </td>
+											<td>Nguyễn Văn A</td>
+											<td>
+												Lấy cao răng
+											</td>
+											<td>BS.Đức</td>
+										  </tr>
+										  <tr>
+											<td>14h30p,16/11/2017 </td>
+											<td>Nguyễn Văn A</td>
+											<td>
+												Lấy cao răng
+											</td>
+											<td>BS.Đức</td>
+										  </tr>
+										  <tr>
+											<td>14h30p,16/11/2017 </td>
+											<td>Nguyễn Văn A</td>
+											<td>
+												Lấy cao răng
+											</td>
+											<td>BS.Đức</td>
+										  </tr>
+										</tbody>
+									  </table>
+								</div>
+							</div>
+							<!-- /initial release -->
+						</div>
+		            <!-- /detached sidebar -->
+					</div>
+					<!-- /detached content -->
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+						<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+								<!-- Support -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Notes</span>
+										<i class="glyphicon glyphicon-pushpin"></i>
+									</div>
+								</div>
+								<!-- /support -->
+								<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="form-group">
+										<textarea class="form-control" id="TextareaNote" rows="7"></textarea>	
+									</div>
+								</div>
+								<!-- /navigation -->
+
+							</div>
+						</div>
+						
+						<div class="sidebar sidebar-default-bottom">
+							<div class="sidebar-content">
+								<!-- Support -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title-note">
+										<span>Lịch</span>
+									</div>
+								</div>
+								<div id="calendar-container">
+									<div id="calendar-header">
+										<span id="calendar-month-year"></span>
+									</div>
+									<div id="calendar-dates">
+									</div>
+								</div>
+								<!-- /support -->
+								<!-- Navigation -->
+									
+								<!-- /navigation -->
+
+							</div>
+						</div>
+					</div>
+					<!-- Footer -->
+					<div class="footer text-muted">
+						 2018. HHK team
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>
