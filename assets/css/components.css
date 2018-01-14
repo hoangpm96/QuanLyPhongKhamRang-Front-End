@@ -197,8 +197,8 @@ a.badge,
    background-color: #ffffff;
   color: #333333;
   border-bottom: 1px solid #ddd;
-  height:300px;
-  margin-top:20px;
+  height:255px;
+  margin-top:5px;
 }
 @media (min-width: 769px) {
   .sidebar-default ,.sidebar-default-bottom{
@@ -236,8 +236,8 @@ a.badge,
 .category-title {
   position: relative;
   margin: 0;
-  padding: 12px 20px;
-  padding-right: 46px;
+  padding: 12px;
+  /* padding-right: 46px; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color:#26a69a;
  
@@ -255,7 +255,7 @@ a.badge,
   background-color:#26a69a;
   margin: 0;
   padding: 12px 20px;
-  padding-right: 46px;
+  /* padding-right: 46px; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   
 }
@@ -269,13 +269,14 @@ a.badge,
   color:#333;
 }
 .category-title > span {
+  text-align: center;
   display: block;
   margin-top: 2px;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.82;
-  color:#333;
+  color:#ffffff;
 }
 .category-title > i {
   position: absolute;
@@ -1236,7 +1237,8 @@ body[class*=navbar-bottom] .content {
 * ---------------------------------------------------------------------------- */
 .footer {
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
+  right: 30px;
 }
 .footer.navbar {
   left: 0;
@@ -1436,8 +1438,8 @@ body[class*=navbar-bottom] .footer:not(.navbar) {
   z-index: 10;
 }
 #TextareaNote{
-	font:20px 'Gloria Hallelujah', cursive; 
-	font-size: 18px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
 	background-color:#ffffff;
 	margin:-0.5px;	
 	

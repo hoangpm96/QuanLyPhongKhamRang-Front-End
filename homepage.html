@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phòng khám nha khoa Trung Đức</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/plugins/forms/wizards/stepy.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
+    <script src="assets/js/select/bootstrap-select.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $('#DanhSachBN').DataTable({
+            select: true
+        });
+    });
+    </script>
+    <!-- /theme JS files -->
+</head>
+
+<body class="has-detached-right">
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="assets/images/avatar.jpg" alt="">
+                        <span>Trung Đức</span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                        <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+    <!-- Page container -->
+    <div class="page-container">
+        <!-- Page content -->
+        <div class="page-content">
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main">
+                <div class="sidebar-content">
+                    <!-- User menu -->
+                    <div class="sidebar-user">
+                        <div class="category-content">
+                            <div class="media">
+                                <a href="#" class="media-left"><img src="assets/images/avatar.jpg" class="img-circle img-sm" alt=""></a>
+                                <div class="media-body">
+                                    <span class="media-heading text-semibold">Trung Đức</span>
+                                    <div class="text-size-mini text-muted">
+                                        <i class="icon-pin text-size-small"></i> Dĩ An - Bình Dương
+                                    </div>
+                                </div>
+                                <div class="media-right media-middle">
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a href="#"><i class="icon-cog3"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /user menu -->
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>CHỨC NĂNG</span> <i class="icon-menu" title="Chức năng"></i></li>
+                                <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Trang chủ</span></a></li>
+                                <li>
+                                    <a href="#"><i class="fa fa-medkit"></i> <span>Khám răng</span></a>
+                                    <ul>
+                                        <li><a href="BenhMoi.html">Bệnh mới</a></li>
+                                        <li><a href="BenhCu.html">Bệnh cũ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="DanhSachBN.html"><i class="icon-list-unordered"></i> <span>Danh sách bệnh nhân </span></a></li>
+                                <li><a href="QuanLyChiTieu.html"><i class="glyphicon glyphicon-usd"></i> <span>Quản lý chi tiêu</span></a></li>
+                                <!-- /main -->
+                                <li>
+                                    <a href="GuiTinNhan.html"><i class="glyphicon glyphicon-envelope"></i> <span>Gửi tin nhắn</span></a>
+                                </li>
+                                <!-- /forms -->
+                                <li>
+                                    <a href="#"><i class="glyphicon glyphicon-cog   "></i> <span>Cài đặt dịch vụ</span></a>
+                                    <ul>
+                                        <li><a href="DSDichVu.html">Danh sách dịch vụ</a></li>
+                                        <li><a href="appearance_panel_heading.html">Tạo dịch vụ mới</a></li>
+                                    </ul>
+                                </li>
+                                <!-- /appearance -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+                </div>
+            </div>
+            <!-- /main sidebar -->
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <!-- Content area -->
+                <div class="content">
+                    <!-- Detached content -->
+                    <div class="container-detached">
+                        <div class="content-detached">
+                            <!-- Initial release -->
+                            <div class="panel panel-flat" id="release">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><b>Danh sách lịch hẹn khám hôm nay</b></h4>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Thời gian</th>
+                                                <th> Họ và tên</th>
+                                                <th>Nội dung tái khám</th>
+                                                <th>Bác Sĩ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>14h30p,16/11/2017 </td>
+                                                <td>Nguyễn Văn A</td>
+                                                <td>
+                                                    Lấy cao răng
+                                                </td>
+                                                <td>BS.Đức</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14h30p,16/11/2017 </td>
+                                                <td>Nguyễn Văn A</td>
+                                                <td>
+                                                    Lấy cao răng
+                                                </td>
+                                                <td>BS.Đức</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14h30p,16/11/2017 </td>
+                                                <td>Nguyễn Văn A</td>
+                                                <td>
+                                                    Lấy cao răng
+                                                </td>
+                                                <td>BS.Đức</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14h30p,16/11/2017 </td>
+                                                <td>Nguyễn Văn A</td>
+                                                <td>
+                                                    Lấy cao răng
+                                                </td>
+                                                <td>BS.Đức</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14h30p,16/11/2017 </td>
+                                                <td>Nguyễn Văn A</td>
+                                                <td>
+                                                    Lấy cao răng
+                                                </td>
+                                                <td>BS.Đức</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14h30p,16/11/2017 </td>
+                                                <td>Nguyễn Văn A</td>
+                                                <td>
+                                                    Lấy cao răng
+                                                </td>
+                                                <td>BS.Đức</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /initial release -->
+                        </div>
+                        <!-- /detached sidebar -->
+                    </div>
+                    <!-- /detached content -->
+                    <!-- Detached sidebar -->
+                    <div class="sidebar-detached">
+                        <div class="sidebar sidebar-default">
+                            <div class="sidebar-content">
+                                <!-- Support -->
+                                <div class="sidebar-category no-margin">
+                                    <div class="category-title">
+                                        <span>GHI CHÚ</span>
+                                    </div>
+                                </div>
+                                <!-- /support -->
+                                <!-- Navigation -->
+                                <div class="sidebar-category">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="TextareaNote" rows="7"></textarea>
+                                    </div>
+                                </div>
+                                <!-- /navigation -->
+                            </div>
+                        </div>
+                        <div class="sidebar sidebar-default-bottom">
+                            <div class="sidebar-content">
+                                <!-- Support -->
+                                <div class="sidebar-category no-margin">
+                                    <div class="category-title">
+                                        <span>Tháng 1 năm 2018</span>
+                                    </div>
+                                </div>
+								<div class="date-grid">
+									<div class="day-headings-row">
+										<div class="day-heading">CN</div>
+										<div class="day-heading">T2</div>
+										<div class="day-heading">T3</div>
+										<div class="day-heading">T4</div>
+										<div class="day-heading">T5</div>
+										<div class="day-heading">T6</div>
+										<div class="day-heading">T7</div>
+									</div>
+								
+									<div class="days-grid">
+										<div class="week">
+											<div class="day"></div>
+											<div class="day">1</div>
+											<div class="day">2</div>
+											<div class="day">3</div>
+											<div class="day">4</div>
+											<div class="day">5</div>
+											<div class="day">6</div>
+										</div>
+								
+										<div class="week">
+											<div class="day">7</div>
+											<div class="day">8</div>
+											<div class="day">9</div>
+											<div class="day">10</div>
+											<div class="day">11</div>
+											<div class="day">12</div>
+											<div class="day">13</div>
+										</div>
+								
+										<div class="week current">
+											<div class="day">14</div>
+											<div class="day">15</div>
+											<div class="day">16</div>
+											<div class="day">17</div>
+											<div class="day">18</div>
+											<div class="day current">19</div>
+											<div class="day">20</div>
+										</div>
+								
+										<div class="week">
+											<div class="day">21</div>
+											<div class="day">22</div>
+											<div class="day">23</div>
+											<div class="day">24</div>
+											<div class="day">25</div>
+											<div class="day">26</div>
+											<div class="day">27</div>
+										</div>
+								
+										<div class="week">
+											<div class="day">28</div>
+											<div class="day">29</div>
+											<div class="day"></div>
+											<div class="day"></div>
+											<div class="day"></div>
+											<div class="day"></div>
+											<div class="day"></div>
+										</div>
+									</div>
+								</div>
+                                <!-- /support -->
+                                <!-- Navigation -->
+                                <!-- /navigation -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer -->
+                    <div class="footer text-muted">
+                        2018. HHK team
+                    </div>
+                    <!-- /footer -->
+                </div>
+                <!-- /content area -->
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- /page content -->
+    </div>
+    <!-- /page container -->
+</body>
+
+</html>

@@ -18,7 +18,37 @@
  *  Latest update: May 25, 2015
  *
  * ---------------------------------------------------------------------------- */
- 
+
+.day-heading, .day {
+	display: inline-block;
+	width: 25px;
+	text-align: center;
+	padding: 0px 10px 5px 10px;
+}
+
+.day-heading {
+	font-size: 14px;
+  font-weight: bold;
+  width: 25px;
+  padding: 3px;
+}
+
+.week {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.week.current {
+	font-weight: bold;
+	background-color: #26a69a40;
+}
+
+.day.current {
+  background-color: #26a69a;
+  color: white;
+  width: 52;
+  height: 52;
+}
  #calendar-container{
     padding: 10px;
     width: 100%;
