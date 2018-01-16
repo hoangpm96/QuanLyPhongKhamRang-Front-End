@@ -34,12 +34,105 @@
     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
-    <script>
+
+    <link rel="stylesheet" href="styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.mobile.min.css" />
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script src="js/kendo.timezones.min.js"></script>
+ 
+ 
+ <script>
     $(document).ready(function() {
 
+         $("#scheduler").kendoScheduler({
+            date: new Date("2018/1/19 "),
+            startTime: new Date("2018/1/19 10:00"),
+            endTime: new Date("2018/6/26 23:00"),
+            height: 600,
+            views: ["day","week","agenda"],
+            editable: false,
+            eventTemplate: $("#event-template").html(),
+            dataSource: [
+                {
+                    title: "Cạo vôi răng",
+                    image: "../content/web/scheduler/fast-and-furious.jpg",
+                    imdb: "http://www.imdb.com/title/tt1905041/",
+                    start: new Date("2018/1/19  17:00"),
+                    end: new Date("2018/1/19  18:30")
+                },
+                {
+                    title: "Làm trắng răng",
+                    image: "../content/web/scheduler/the-internship.jpg",
+                    imdb: "http://www.imdb.com/title/tt2234155/",
+                    start: new Date("2018/1/19  14:00"),
+                    end: new Date("2018/1/19  15:30")
+                },
+                {
+                    title: "Cạo vôi răng",
+                    image: "../content/web/scheduler/wallflower.jpg",
+                    imdb: "http://www.imdb.com/title/tt1659337/",
+                    start: new Date("2018/1/19  16:00"),
+                    end: new Date("2018/1/19  17:30")
+                },
+                {
+                    title: "Làm trắng răng",
+                    image: "../content/web/scheduler/the-help.jpg",
+                    imdb: "http://www.imdb.com/title/tt1454029/",
+                    start: new Date("2018/1/19  12:00"),
+                    end: new Date("2018/1/19  13:30")
+                },
+                {
+                    title: "Nạo vét nha chu",
+                    image: "../content/web/scheduler/now-you-see-me.jpg",
+                    imdb: "http://www.imdb.com/title/tt1670345/",
+                    start: new Date("2018/1/19  10:00"),
+                    end: new Date("2018/1/19  11:30")
+                },
+                {
+                    title: "Nhổ chân răng, răng nhiều chân",
+                    image: "../content/web/scheduler/fast-and-furious.jpg",
+                    imdb: "http://www.imdb.com/title/tt1905041/",
+                    start: new Date("2018/1/19  19:00"),
+                    end: new Date("2018/1/19  20:30")
+                },
+                {
+                    title: "Chữa cười hở lợi",
+                    image: "../content/web/scheduler/the-internship.jpg",
+                    imdb: "http://www.imdb.com/title/tt2234155/",
+                    start: new Date("2018/1/19  17:30"),
+                    end: new Date("2018/1/19  19:00")
+                },
+                {
+                    title: "Chốt tủy kim loại",
+                    image: "../content/web/scheduler/wallflower.jpg",
+                    imdb: "http://www.imdb.com/title/tt1659337/",
+                    start: new Date("2018/1/19  17:30"),
+                    end: new Date("2018/1/19  19:00")
+                },
+                {
+                    title: "Chích apxe lợi độ 1",
+                    image: "../content/web/scheduler/the-help.jpg",
+                    imdb: "http://www.imdb.com/title/tt1454029/",
+                    start: new Date("2018/1/19  13:30"),
+                    end: new Date("2018/1/19  15:00")
+                },
+                {
+                    title: "Tẩy trắng răng tại nhà 2 ống thuốc",
+                    image: "../content/web/scheduler/now-you-see-me.jpg",
+                    imdb: "http://www.imdb.com/title/tt1670345/",
+                    start: new Date("2018/1/19  12:30"),
+                    end: new Date("2018/1/19  14:00")
+                }
+            ]
+        });
         $('#DanhSachBN').DataTable({
             select: true
         });
+
+
     });
     </script>
     <!-- /theme JS files -->
@@ -109,7 +202,7 @@
                             <ul class="navigation navigation-main navigation-accordion">
                                 <!-- Main -->
                                 <li class="navigation-header"><span>CHỨC NĂNG</span> <i class="icon-menu" title="Chức năng"></i></li>
-                                <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Trang chủ</span></a></li>
+                                <li class="active"><a href="homepage.html"><i class="icon-home4"></i> <span>Trang chủ</span></a></li>
                                 <li>
                                     <a href="#"><i class="fa fa-medkit"></i> <span>Khám răng</span></a>
                                     <ul>
@@ -121,7 +214,7 @@
                                 <li><a href="QuanLyChiTieu.html"><i class="glyphicon glyphicon-usd"></i> <span>Quản lý chi tiêu</span></a></li>
                                 <!-- /main -->
                                 <li>
-                                    <a href="GuiTinNhan.html"><i class="glyphicon glyphicon-envelope"></i> <span>Gửi tin nhắn</span></a>
+                                    <a href="sendSMS.html"><i class="glyphicon glyphicon-envelope"></i> <span>Gửi tin nhắn</span></a>
                                 </li>
                                 <!-- /forms -->
                                 <li>
@@ -139,196 +232,51 @@
                 </div>
             </div>
             <!-- /main sidebar -->
-            <!-- Main content -->
-            <div class="content-wrapper">
-                <!-- Content area -->
-                <div class="content">
-                    <!-- Detached content -->
-                    <div class="container-detached">
-                        <div class="content-detached">
-                            <!-- Initial release -->
-                            <div class="panel panel-flat" id="release">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><b>Danh sách lịch hẹn khám hôm nay</b></h4>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Thời gian</th>
-                                                <th> Họ và tên</th>
-                                                <th>Nội dung tái khám</th>
-                                                <th>Bác Sĩ</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>14h30p,16/11/2017 </td>
-                                                <td>Nguyễn Văn A</td>
-                                                <td>
-                                                    Lấy cao răng
-                                                </td>
-                                                <td>BS.Đức</td>
-                                            </tr>
-                                            <tr>
-                                                <td>14h30p,16/11/2017 </td>
-                                                <td>Nguyễn Văn A</td>
-                                                <td>
-                                                    Lấy cao răng
-                                                </td>
-                                                <td>BS.Đức</td>
-                                            </tr>
-                                            <tr>
-                                                <td>14h30p,16/11/2017 </td>
-                                                <td>Nguyễn Văn A</td>
-                                                <td>
-                                                    Lấy cao răng
-                                                </td>
-                                                <td>BS.Đức</td>
-                                            </tr>
-                                            <tr>
-                                                <td>14h30p,16/11/2017 </td>
-                                                <td>Nguyễn Văn A</td>
-                                                <td>
-                                                    Lấy cao răng
-                                                </td>
-                                                <td>BS.Đức</td>
-                                            </tr>
-                                            <tr>
-                                                <td>14h30p,16/11/2017 </td>
-                                                <td>Nguyễn Văn A</td>
-                                                <td>
-                                                    Lấy cao răng
-                                                </td>
-                                                <td>BS.Đức</td>
-                                            </tr>
-                                            <tr>
-                                                <td>14h30p,16/11/2017 </td>
-                                                <td>Nguyễn Văn A</td>
-                                                <td>
-                                                    Lấy cao răng
-                                                </td>
-                                                <td>BS.Đức</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <!-- /initial release -->
-                        </div>
-                        <!-- /detached sidebar -->
-                    </div>
-                    <!-- /detached content -->
-                    <!-- Detached sidebar -->
-                    <div class="sidebar-detached">
-                        <div class="sidebar sidebar-default">
-                            <div class="sidebar-content">
-                                <!-- Support -->
-                                <div class="sidebar-category no-margin">
-                                    <div class="category-title">
-                                        <span>GHI CHÚ</span>
-                                    </div>
-                                </div>
-                                <!-- /support -->
-                                <!-- Navigation -->
-                                <div class="sidebar-category">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="TextareaNote" rows="7"></textarea>
-                                    </div>
-                                </div>
-                                <!-- /navigation -->
-                            </div>
-                        </div>
-                        <div class="sidebar sidebar-default-bottom">
-                            <div class="sidebar-content">
-                                <!-- Support -->
-                                <div class="sidebar-category no-margin">
-                                    <div class="category-title">
-                                        <span>Tháng 1 năm 2018</span>
-                                    </div>
-                                </div>
-								<div class="date-grid">
-									<div class="day-headings-row">
-										<div class="day-heading">CN</div>
-										<div class="day-heading">T2</div>
-										<div class="day-heading">T3</div>
-										<div class="day-heading">T4</div>
-										<div class="day-heading">T5</div>
-										<div class="day-heading">T6</div>
-										<div class="day-heading">T7</div>
-									</div>
-								
-									<div class="days-grid">
-										<div class="week">
-											<div class="day"></div>
-											<div class="day">1</div>
-											<div class="day">2</div>
-											<div class="day">3</div>
-											<div class="day">4</div>
-											<div class="day">5</div>
-											<div class="day">6</div>
-										</div>
-								
-										<div class="week">
-											<div class="day">7</div>
-											<div class="day">8</div>
-											<div class="day">9</div>
-											<div class="day">10</div>
-											<div class="day">11</div>
-											<div class="day">12</div>
-											<div class="day">13</div>
-										</div>
-								
-										<div class="week current">
-											<div class="day">14</div>
-											<div class="day">15</div>
-											<div class="day">16</div>
-											<div class="day">17</div>
-											<div class="day">18</div>
-											<div class="day current">19</div>
-											<div class="day">20</div>
-										</div>
-								
-										<div class="week">
-											<div class="day">21</div>
-											<div class="day">22</div>
-											<div class="day">23</div>
-											<div class="day">24</div>
-											<div class="day">25</div>
-											<div class="day">26</div>
-											<div class="day">27</div>
-										</div>
-								
-										<div class="week">
-											<div class="day">28</div>
-											<div class="day">29</div>
-											<div class="day"></div>
-											<div class="day"></div>
-											<div class="day"></div>
-											<div class="day"></div>
-											<div class="day"></div>
-										</div>
-									</div>
-								</div>
-                                <!-- /support -->
-                                <!-- Navigation -->
-                                <!-- /navigation -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer -->
-                    <div class="footer text-muted">
-                        2018. HHK team
-                    </div>
-                    <!-- /footer -->
-                </div>
-                <!-- /content area -->
+            <div id="example" class="k-content">
+                <div id="scheduler"></div>
             </div>
             <!-- /main content -->
         </div>
         <!-- /page content -->
     </div>
     <!-- /page container -->
+
+
+
+
+
+
+
+    <style>
+        .movie-template img {
+            float: left;
+            margin: 0 8px;
+        }
+    
+        .movie-template p {
+            margin: 5px 0 0;
+        }
+    
+        .movie-template h3 {
+            padding: 0 8px 5px;
+            font-size: 12px;
+        }
+    
+        .movie-template a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    
+        .k-state-hover .movie-template a,
+        .movie-template a:hover {
+            color: #000000;
+        }
+
+
+
+    </style>
+
 </body>
 
 </html>
