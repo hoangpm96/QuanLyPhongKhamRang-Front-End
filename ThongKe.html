@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phòng khám nha khoa Trung Đức</title>
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/dental-blue-icons/512/Untitled-1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/plugins/forms/wizards/stepy.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
+    <script src="assets/js/select/bootstrap-select.js"></script>
+
+
+    <script type="text/javascript" src="assets/js/plugins/visualization/echarts/echarts.js"></script>
+    <script type="text/javascript" src="assets/js/charts/echarts/pies_donuts.js"></script>
+    
+
+    <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+    <!-- /theme JS files -->
+</head>
+
+<body class="has-detached-right">
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav visible-xs-block">
+                <li>
+                    <a class="sidebar-mobile-main-toggle">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="sidebar-control sidebar-main-toggle hidden-xs">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="assets/images/avatar.jpg" alt="">
+                        <span>Trung Đức</span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href="#">
+                                <i class="icon-user-plus"></i> My profile</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-cog5"></i> Account settings</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-switch2"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+    <!-- Page container -->
+    <div class="page-container">
+    
+        <!-- Page content -->
+        <div class="page-content">
+    
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main">
+                <div class="sidebar-content">
+                    <!-- User menu -->
+                    <div class="sidebar-user">
+                        <div class="category-content">
+                            <div class="media">
+                                <a href="#" class="media-left">
+                                    <img src="assets/images/avatar.jpg" class="img-circle img-sm" alt="">
+                                </a>
+                                <div class="media-body">
+                                    <span class="media-heading text-semibold">Trung Đức</span>
+                                    <div class="text-size-mini text-muted">
+                                        <i class="icon-pin text-size-small"></i> Dĩ An - Bình Dương
+                                    </div>
+                                </div>
+                                <div class="media-right media-middle">
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-cog3"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /user menu -->
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header">
+                                    <span>CHỨC NĂNG</span>
+                                    <i class="icon-menu" title="Chức năng"></i>
+                                </li>
+                                <li class="active">
+                                    <a href="homepage.html">
+                                        <i class="icon-home4"></i>
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-medkit"></i>
+                                        <span>Khám răng</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="BenhMoi.html">Bệnh mới</a>
+                                        </li>
+                                        <li>
+                                            <a href="BenhCu.html">Bệnh cũ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="DanhSachBN.html">
+                                        <i class="icon-list-unordered"></i>
+                                        <span>Danh sách bệnh nhân </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="QuanLyChiTieu.html">
+                                        <i class="glyphicon glyphicon-usd"></i>
+                                        <span>Quản lý chi tiêu</span>
+                                    </a>
+                                </li>
+                                <!-- /main -->
+                                <li>
+                                    <a href="sendSMS.html">
+                                        <i class="glyphicon glyphicon-envelope"></i>
+                                        <span>Gửi tin nhắn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ThongKe.html">
+                                        <i class="icon-graph"></i>
+                                        <span>Thống Kê</span>
+                                    </a>
+                                </li>
+                                <!-- /forms -->
+                                <li>
+                                    <a href="#">
+                                        <i class="glyphicon glyphicon-cog   "></i>
+                                        <span>Cài đặt dịch vụ</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="DSDichVu.html">Danh sách dịch vụ</a>
+                                        </li>
+                                        <li>
+                                            <a href="appearance_panel_heading.html">Tạo dịch vụ mới</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- /appearance -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+                </div>
+            </div>
+            <!-- /main sidebar -->
+    
+    
+            <!-- Main content -->
+            <div class="content-wrapper">
+    
+                <!-- Page header -->
+                <div class="page-header page-header-default">
+                    <div class="page-header-content">
+                        <div class="page-title">
+                            <h4>
+                               
+                                <span class="text-semibold">Thống Kê</h4>
+                        </div>
+    
+                        <div class="heading-elements">
+                            <div class="heading-btn-group">
+                                <a href="#" class="btn btn-link btn-float has-text">
+                                    <i class="icon-bars-alt text-primary"></i>
+                                    <span>Statistics</span>
+                                </a>
+                                <a href="#" class="btn btn-link btn-float has-text">
+                                    <i class="icon-calculator text-primary"></i>
+                                    <span>Invoices</span>
+                                </a>
+                                <a href="#" class="btn btn-link btn-float has-text">
+                                    <i class="icon-calendar5 text-primary"></i>
+                                    <span>Schedule</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                   
+                </div>
+                <!-- /page header -->
+                
+    
+                <!-- Content area -->
+                <div class="content">
+    
+                        <!-- Quick stats boxes -->
+                        <div class="row">
+                            <div class="col-lg-4">
+                        
+                                <!-- Members online -->
+                                <div class="panel bg-teal-400">
+                                    <div class="panel-body">
+                                        <div class="heading-elements">
+                                            <span class="heading-text badge bg-teal-800">+53,6%</span>
+                                        </div>
+                        
+                                        <h3 class="no-margin">3,450</h3>
+                                        Members online
+                                        <div class="text-muted text-size-small">489 avg</div>
+                                    </div>
+                        
+                                    <div class="container-fluid">
+                                        <div id="members-online"></div>
+                                    </div>
+                                </div>
+                                <!-- /members online -->
+                        
+                            </div>
+                        
+                            <div class="col-lg-4">
+                        
+                                <!-- Current server load -->
+                                <div class="panel bg-pink-400">
+                                    <div class="panel-body">
+                                        <div class="heading-elements">
+                                            <ul class="icons-list">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                        <i class="icon-cog3"></i>
+                                                        <span class="caret"></span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="icon-sync"></i> Update data</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="icon-list-unordered"></i> Detailed log</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="icon-pie5"></i> Statistics</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="icon-cross3"></i> Clear list</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                        
+                                        <h3 class="no-margin">49.4%</h3>
+                                        Current server load
+                                        <div class="text-muted text-size-small">34.6% avg</div>
+                                    </div>
+                        
+                                    <div id="server-load"></div>
+                                </div>
+                                <!-- /current server load -->
+                        
+                            </div>
+                        
+                            <div class="col-lg-4">
+                        
+                                <!-- Today's revenue -->
+                                <div class="panel bg-blue-400">
+                                    <div class="panel-body">
+                                        <div class="heading-elements">
+                                            <ul class="icons-list">
+                                                <li>
+                                                    <a data-action="reload"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                        
+                                        <h3 class="no-margin">VNĐ 18.390.800 </h3>
+                                        Tổng doanh thu
+                                        <div class="text-muted text-size-small">$37,578 avg</div>
+                                    </div>
+                        
+                                    <div id="today-revenue"></div>
+                                </div>
+                                <!-- /today's revenue -->
+                        
+                            </div>
+                        </div>
+                        <!-- /quick stats boxes -->
+
+                        
+
+                    <div class="row">
+                        <div class="col-md-6">
+                    
+                            <!-- Basic pie chart -->
+                            <div class="panel panel-flat">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">Basic pie chart</h5>
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="collapse"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="close"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <div class="panel-body">
+                                    <div class="chart-container has-scroll">
+                                        <div class="chart has-fixed-height has-minimum-width" id="basic_pie"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /bacis pie chart -->
+                    
+                    
+                            <!-- Nested pie charts -->
+                            <div class="panel panel-flat">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">Nested pie charts</h5>
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="collapse"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="close"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <div class="panel-body">
+                                    <div class="chart-container has-scroll">
+                                        <div class="chart has-fixed-height has-minimum-width" id="nested_pie"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /nested pie charts -->
+                    
+                    
+                            <!-- Nightingale roses width hidden labels -->
+                            <div class="panel panel-flat">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">Nightingale roses (hidden labels)</h5>
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="collapse"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="close"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <div class="panel-body">
+                                    <div class="chart-container has-scroll">
+                                        <div class="chart has-fixed-height has-minimum-width" id="rose_diagram_hidden"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /nightingale roses width hidden labels -->
+                    
+                    
+                            <!-- Multi level donut -->
+                            <div class="panel panel-flat">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">Multi level donut chart</h5>
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="collapse"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="close"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <div class="panel-body">
+                                    <div class="chart-container has-scroll">
+                                        <div class="chart has-fixed-height has-minimum-width" id="lasagna_donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /multi level donut -->
+                    
+                        </div>
+                    
+                        <div class="col-md-6">
+                    
+                            <!-- Basic donut chart -->
+                            <div class="panel panel-flat">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">Basic donut chart</h5>
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="collapse"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="close"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <div class="panel-body">
+                                    <div class="chart-container has-scroll">
+                                        <div class="chart has-fixed-height has-minimum-width" id="basic_donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /basic donut chart -->
+                    
+                    
+                            <!-- Infographic style -->
+                            <div class="panel panel-flat">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">Infographic style</h5>
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="collapse"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="close"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <div class="panel-body">
+                                    <div class="chart-container has-scroll">
+                                        <div class="chart has-fixed-height has-minimum-width" id="infographic_donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /infographic style -->
+                    
+                    
+                            <!-- Nightingale roses width visible labels -->
+                            <div class="panel panel-flat">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">Nightingale roses (visible labels)</h5>
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="collapse"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="close"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <div class="panel-body">
+                                    <div class="chart-container has-scroll">
+                                        <div class="chart has-fixed-height has-minimum-width" id="rose_diagram_visible"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /nightingale roses width hidden labels -->
+                    
+                    
+                            <!-- Pie chart timeline -->
+                            <div class="panel panel-flat">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">Pie chart timeline</h5>
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="collapse"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                            <li>
+                                                <a data-action="close"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    
+                                <div class="panel-body">
+                                    <div class="chart-container has-scroll">
+                                        <div class="chart has-fixed-height has-minimum-width" id="pie_timeline"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /pie chart timeline -->
+                    
+                        </div>
+                    </div>
+
+    
+                  
+    
+                    <!-- Footer -->
+                    <div class="footer text-muted">
+                        &copy; 2015.
+                        <a href="#">Limitless Web App Kit</a> by
+                        <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+                    </div>
+                    <!-- /footer -->
+    
+                </div>
+                <!-- /content area -->
+    
+            </div>
+            <!-- /main content -->
+    
+        </div>
+        <!-- /page content -->
+    
+    </div>
+    <!-- /page container -->
+
+
+
+
+
+
+    <style>
+        .movie-template img {
+            float: left;
+            margin: 0 8px;
+        }
+
+        .movie-template p {
+            margin: 5px 0 0;
+        }
+
+        .movie-template h3 {
+            padding: 0 8px 5px;
+            font-size: 12px;
+        }
+
+        .movie-template a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .k-state-hover .movie-template a,
+        .movie-template a:hover {
+            color: #000000;
+        }
+    </style>
+
+</body>
+
+</html>
