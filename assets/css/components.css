@@ -28,18 +28,6 @@
 *  Latest update: Mar 10, 2016
 *
 * ---------------------------------------------------------------------------- */
-#noidungtinnhan{
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 55px;
-}
-#btnguitinnhan{
-  float: right;
-  margin-right: 10px;
-  margin-top: -45px;
-}
-
 .no-transitions * {
   -webkit-transition: none !important;
   -o-transition: none !important;
@@ -184,27 +172,15 @@ a.badge,
 .sidebar:not(.sidebar-default) + .sidebar:not(.sidebar-default) {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
-.sidebar:not(.sidebar-default-note) + .sidebar:not(.sidebar-default-note) {
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
 .sidebar-default {
-  background-color: #fcfcfc;
-  color: #333;
-  border-bottom: 1px solid #ddd;
-
-}
-.sidebar-default-bottom{
-   background-color: #ffffff;
+  background-color: #fff;
   color: #333333;
   border-bottom: 1px solid #ddd;
-  height:255px;
-  margin-top:5px;
 }
 @media (min-width: 769px) {
-  .sidebar-default ,.sidebar-default-bottom{
+  .sidebar-default {
     border-bottom: 0;
-    
-	
+    border-right: 1px solid #ddd;
   }
   .content-wrapper + .sidebar-default {
     border-left: 1px solid #ddd;
@@ -214,10 +190,6 @@ a.badge,
   position: relative;
   padding-bottom: 8px;
 }
-.sidebar-content > div{
-	margin-bottom: 0px;
-}
-
 .sidebar-all-hidden .sidebar-main,
 .sidebar-all-hidden .sidebar-secondary,
 .sidebar-main-hidden .sidebar-main,
@@ -236,47 +208,17 @@ a.badge,
 .category-title {
   position: relative;
   margin: 0;
-  padding: 12px;
-  /* padding-right: 46px; */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background-color:#26a69a;
- 
-}
-.category-title-select {
-  position: relative;
-  margin: 0;
   padding: 12px 20px;
   padding-right: 46px;
-  background-color:transparent;
- 
-}
-.category-title-note{
-  position: relative;
-  background-color:#26a69a;
-  margin: 0;
-  padding: 12px 20px;
-  /* padding-right: 46px; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  
 }
-.category-title-note > span{
+.category-title > span {
   display: block;
   margin-top: 2px;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 11px;
   line-height: 1.82;
-  color:#333;
-}
-.category-title > span {
-  text-align: center;
-  display: block;
-  margin-top: 2px;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.82;
-  color:#ffffff;
 }
 .category-title > i {
   position: absolute;
@@ -405,16 +347,8 @@ a.badge,
 .navigation > li.active > a:hover,
 .navigation > li.active > a:focus {
   background-color: #26A69A;
-  color:#fff;
+  color: #fff;
 }
-
-.navigation > li.active > a,
-.navigation > li > a:hover,
-.navigation > li > a:focus {
-  background-color: #26A69A;
-  color:#fff;
-}
-
 .navigation > li.active > a > [class*=text-] {
   color: #fff;
 }
@@ -424,7 +358,7 @@ a.badge,
   border-color: transparent;
 }
 .navigation > li ul {
-  list-style: none; 
+  list-style: none;
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.15);
@@ -707,15 +641,14 @@ a.badge,
     margin-bottom: 20px;
   }
   .sidebar-detached > .sidebar-default {
-    
+    border: 1px solid #ddd;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-	
   }
   .sidebar-detached > .sidebar {
     margin-bottom: 0;
     display: block;
-   
+    border-radius: 3px;
   }
   .sidebar-detached.affix {
     position: fixed;
@@ -1237,8 +1170,7 @@ body[class*=navbar-bottom] .content {
 * ---------------------------------------------------------------------------- */
 .footer {
   position: absolute;
-  bottom: 0px;
-  right: 30px;
+  bottom: 30px;
 }
 .footer.navbar {
   left: 0;
@@ -1436,13 +1368,6 @@ body[class*=navbar-bottom] .footer:not(.navbar) {
   margin: auto;
   position: relative;
   z-index: 10;
-}
-#TextareaNote{
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	background-color:#ffffff;
-	margin:-0.5px;	
-	
 }
 .jqueryui-demo-element + .jqueryui-demo-element {
   margin: 20px auto 0 auto;
@@ -3631,19 +3556,6 @@ li.multiselect-filter .form-control {
 .selectbox-auto + .selectboxit-options {
   width: auto;
 }
-.select-div{
-	height:40px;
-	width:auto;
-	margin: 0 auto;
-	padding-left:10px;
-	padding-right:10px;
-	position: relative;
-	
-}
-.div-txt-align{
-	text-align:right;
-	padding-right:10px;
-}
 .selectbox-lg + .selectboxit-container .selectboxit {
   padding: 9px 15px;
   padding-right: 30px;
@@ -3691,8 +3603,7 @@ li.multiselect-filter .form-control {
 .bootstrap-select > .btn.btn-default,
 .bootstrap-select > .btn.btn-default.disabled {
   background-color: #fff;
-  width:300;
-  height:50;
+  border-color: #ddd;
 }
 .bootstrap-select > .btn.btn-default:active,
 .btn-group.open .bootstrap-select > .btn.btn-default {
@@ -3810,7 +3721,7 @@ li.multiselect-filter .form-control {
   padding-left: 10px;
 }
 .bootstrap-select.btn-group .dropdown-menu > .selected > a {
-  background-color: #4ca6b1;
+  background-color: #2196F3;
   color: #fff;
 }
 .bootstrap-select.btn-group .dropdown-menu > .selected > a small {
@@ -5156,8 +5067,6 @@ legend.alpaca-container-label {
 .panel-flat > .wizard > .steps > ul {
   border-top: 1px solid #ddd;
 }
-
-
 .wizard > .actions {
   position: relative;
   display: block;
@@ -5236,10 +5145,6 @@ legend.alpaca-container-label {
 * ---------------------------------------------------------------------------- */
 .panel-flat > .ui-formwizard {
   border-top: 1px solid #ddd;
-}
-.panel-blue-bottom{
-	margin-top:20px;
-	background-color:#fcfcfc;
 }
 .form-wizard-title {
   margin: 0 0 20px 0;
@@ -13633,7 +13538,6 @@ a.fc-more:hover {
 .panel.panel-flat > div > .plupload_wrapper {
   border-top: 1px solid #ddd;
 }
-
 .plupload_header:after,
 .plupload_filelist:empty:before,
 .plupload_filelist li.plupload_droptext:before,
@@ -20183,11 +20087,4 @@ label.display-block {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-}
-
-.svg{
-	
-	width:80%;
-	
-	border-radius:1px;
 }
