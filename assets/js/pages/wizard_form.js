@@ -185,10 +185,9 @@ $(function() {
     });
 
 
-    // 
+    // Uncomment if you use styled checkboxes/radios to update them dynamically when step changed
     $(".form-basic, .form-validation, .form-add-steps, .form-ajax").on("step_shown", function(event, data){
         //$.uniform.update();
     });
     
 });
-Uncomment if you use styled checkboxes/radios to update them dynamically when step changed
