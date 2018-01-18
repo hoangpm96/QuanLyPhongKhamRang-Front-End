@@ -18,6 +18,18 @@
  *  Latest update: May 25, 2015
  *
  * ---------------------------------------------------------------------------- */
+.icon-select{
+  margin-top: 10px;
+
+}
+#search-input{
+  margin: 20px;
+
+}
+#btnXemDSChiTieu{
+  margin-top: 28px;
+}
+
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../css/icons/glyphicons/glyphicons-halflings-regular.eot');

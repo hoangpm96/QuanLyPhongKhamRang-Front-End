@@ -15,13 +15,13 @@
 	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/css/bootstrap-select.css">
-
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.4/css/select.bootstrap.min.css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-	
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -35,17 +35,9 @@
 	<script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
 	
 	 <script src="assets/js/select/bootstrap-select.js"></script>
-	 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-	 <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
-	 <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
 	<!-- /theme JS files -->
 	<script>
 		$(document).ready(function(){
-
-			$('#example').DataTable( {
-		        select: true
-		    } );
-
 			$('.tooth-11').mouseover(function(){
   $('.tooth-11-parent').css('fill', '#9ce3ec');
 });
@@ -548,12 +540,12 @@ $('.tooth-48').mouseleave(function(){
 
 								<!-- Main -->
 								<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
-								<li><a href="index.html"><i class="icon-home4"></i> <span>Trang chủ</span></a></li>
-								<li>
+								<li ><a href="homepage.html"><i class="icon-home4"></i> <span>Trang chủ</span></a></li>
+								<li >
 									<a href="#"><i class="fa fa-medkit"></i> <span>Khám răng</span></a>
 									<ul>
-										<li><a href="BenhMoi.html">Bệnh mới</a></li>
-										<li  class="active"><a href="BenhCu.html">Bệnh cũ</a></li>
+										<li class="active"><a href="BenhMoi.html">Bệnh mới</a></li>
+										<li><a href="BenhCu.html">Bệnh cũ</a></li>
 									</ul>
 								</li>
 								<li><a href="DanhSachBN.html"><i class="icon-list-unordered"></i> <span>Danh sách bệnh nhân </span></a></li>
@@ -563,13 +555,13 @@ $('.tooth-48').mouseleave(function(){
 									<a href="GuiTinNhan.html"><i class="glyphicon glyphicon-envelope"></i> <span>Gửi tin nhắn</span></a>	
 								</li>
 								<!-- /forms -->
+
                 <li>
                   <a href="ThongKe.html">
                     <i class="icon-graph"></i>
                     <span>Thống Kê</span>
                   </a>
                 </li>
-								
 								<li>
 									<a href="#"><i class="glyphicon glyphicon-cog 	"></i> <span>Cài đặt dịch vụ</span></a>
 									<ul>
@@ -592,20 +584,12 @@ $('.tooth-48').mouseleave(function(){
 			<!-- Main content -->
 			<div class="content-wrapper">
 
-				<!-- Page header -->
-				
-				<!-- /page header -->
-
-
 				<!-- Content area -->
 				<div class="content">
-
-					
-
 		            <!-- Wizard with validation -->
 		            <div class="panel panel-white">
 						<div class="panel-heading">
-							<h6 class="panel-title"> Khám răng</h6>
+							<h4 class="panel-title"> <b>Khám răng</b> </h4>
 						</div>
 	                	<form class="stepy-validation" action="#">
 							<fieldset title="1">
@@ -639,34 +623,34 @@ $('.tooth-48').mouseleave(function(){
 								                <td>$320,800</td>
 								            </tr>
 								            <tr>
-								                <td>1</td>
+								                <td>2</td>
 								                <td>System Architect</td>
 								                <td>20/02/1878</td>
 								                <td>0162523833</td>
 								                <td>$320,800</td>
 								            </tr>
 								            <tr>
-								                <td>1</td>
+								                <td>3</td>
 								                <td>System Architect</td>
 								                <td>20/02/1878</td>
 								                <td>0162523833</td>
 								                <td>$320,800</td>
 								            </tr><tr>
-								                <td>1</td>
+								                <td>4</td>
 								                <td>System Architect</td>
 								                <td>20/02/1878</td>
 								                <td>0162523833</td>
 								                <td>$320,800</td>
 								            </tr>
 								            <tr>
-								                <td>1</td>
+								                <td>5</td>
 								                <td>System Architect</td>
 								                <td>20/02/1878</td>
 								                <td>0162523833</td>
 								                <td>$320,800</td>
 								            </tr>
 								            <tr>
-								                <td>1</td>
+								                <td>6</td>
 								                <td>System Architect</td>
 								                <td>20/02/1878</td>
 								                <td>0162523833</td>
@@ -701,31 +685,31 @@ $('.tooth-48').mouseleave(function(){
 								                <th>Cạo vôi răng, Tẩy trắng răng</th>
 								            </tr>
 								            <tr>
-								                <th>1</th>
+								                <th>2</th>
 								                <th>3/20/2017</th>
 								                <th>3</th>
 								                <th>Cạo vôi răng, Tẩy trắng răng</th>
 								            </tr>
 								            <tr>
-								                <th>1</th>
+								                <th>3</th>
 								                <th>3/20/2017</th>
 								                <th>3</th>
 								                <th>Cạo vôi răng, Tẩy trắng răng</th>
 								            </tr>
 								            <tr>
-								                <th>1</th>
+								                <th>4</th>
 								                <th>3/20/2017</th>
 								                <th>3</th>
 								                <th>Cạo vôi răng, Tẩy trắng răng</th>
 								            </tr>
 								            <tr>
-								                <th>1</th>
+								                <th>5</th>
 								                <th>3/20/2017</th>
 								                <th>3</th>
 								                <th>Cạo vôi răng, Tẩy trắng răng</th>
 								            </tr>
 								            <tr>
-								                <th>1</th>
+								                <th>6</th>
 								                <th>3/20/2017</th>
 								                <th>3</th>
 								                <th>Cạo vôi răng, Tẩy trắng răng</th>
@@ -738,6 +722,7 @@ $('.tooth-48').mouseleave(function(){
 								<div class= "row">
 								</div>
 							</fieldset>
+
 							<fieldset title="3">
 								<legend class="text-semibold">Chi tiết khám răng</legend>
 								<div class="row">
@@ -1607,14 +1592,14 @@ $('.tooth-48').mouseleave(function(){
 												<h5 class="panel-title-history">Nội dung khám chữa</h5>
 											</div>
 											<div>
-											<div class="select-div">
-												<select id="maxOption2" class="selectpicker show-menu-arrow form-control" multiple >
-												  <option> chicken</option>
-												  <option> turkey</option>
-												  <option> duck</option>
-												  <option> goose</option>
-												</select>
-											</div>
+												<div class="select-div">
+													<select id="maxOption2" class="selectpicker show-menu-arrow form-control" multiple >
+													  <option> chicken</option>
+													  <option> turkey</option>
+													  <option> duck</option>
+													  <option> goose</option>
+													</select>
+												</div>
 											</div>
 											<div class="div-txt-align">
 											   <button type="button" class="btn btn-primary btn-md">Lưu</button>    	
@@ -1818,11 +1803,6 @@ $('.tooth-48').mouseleave(function(){
 						</form>
 		            </div>
 		            <!-- /wizard with validation -->
-
-
-		            
-
-
 					<!-- Footer -->
 					<div class="footer text-muted">
 						2018 HHK team.

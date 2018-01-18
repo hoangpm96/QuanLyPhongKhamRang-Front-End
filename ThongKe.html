@@ -28,20 +28,30 @@
     <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
     <script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
-    <script type="text/javascript" src="assets/js/core/app.js"></script>
-    <script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
+
+
     <script src="assets/js/select/bootstrap-select.js"></script>
 
 
     <script type="text/javascript" src="assets/js/plugins/visualization/echarts/echarts.js"></script>
     <script type="text/javascript" src="assets/js/charts/echarts/pies_donuts.js"></script>
-    
+
 
     <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
     <script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
 
+    <script type="text/javascript" src="assets/js/plugins/notifications/jgrowl.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/anytime.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/legacy.js"></script>
+    <script type="text/javascript" src="assets/js/pages/picker_date.js"></script>
 
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
     <script>
         $(document).ready(function () {
 
@@ -98,10 +108,10 @@
     <!-- /main navbar -->
     <!-- Page container -->
     <div class="page-container">
-    
+
         <!-- Page content -->
         <div class="page-content">
-    
+
             <!-- Main sidebar -->
             <div class="sidebar sidebar-main">
                 <div class="sidebar-content">
@@ -208,146 +218,140 @@
                 </div>
             </div>
             <!-- /main sidebar -->
-    
-    
+
+
             <!-- Main content -->
             <div class="content-wrapper">
-    
+
                 <!-- Page header -->
                 <div class="page-header page-header-default">
                     <div class="page-header-content">
                         <div class="page-title">
                             <h4>
-                               
+
                                 <span class="text-semibold">Thống Kê</h4>
                         </div>
-    
-                        <div class="heading-elements">
-                            <div class="heading-btn-group">
-                                <a href="#" class="btn btn-link btn-float has-text">
-                                    <i class="icon-bars-alt text-primary"></i>
-                                    <span>Statistics</span>
-                                </a>
-                                <a href="#" class="btn btn-link btn-float has-text">
-                                    <i class="icon-calculator text-primary"></i>
-                                    <span>Invoices</span>
-                                </a>
-                                <a href="#" class="btn btn-link btn-float has-text">
-                                    <i class="icon-calendar5 text-primary"></i>
-                                    <span>Schedule</span>
-                                </a>
-                            </div>
-                        </div>
+
                     </div>
-    
-                   
+
+
                 </div>
                 <!-- /page header -->
-                
-    
+
+
                 <!-- Content area -->
                 <div class="content">
-    
-                        <!-- Quick stats boxes -->
-                        <div class="row">
-                            <div class="col-lg-4">
-                        
-                                <!-- Members online -->
-                                <div class="panel bg-teal-400">
-                                    <div class="panel-body">
-                                        <div class="heading-elements">
-                                            <span class="heading-text badge bg-teal-800">+53,6%</span>
-                                        </div>
-                        
-                                        <h3 class="no-margin">3,450</h3>
-                                        Members online
-                                        <div class="text-muted text-size-small">489 avg</div>
-                                    </div>
-                        
-                                    <div class="container-fluid">
-                                        <div id="members-online"></div>
-                                    </div>
-                                </div>
-                                <!-- /members online -->
-                        
-                            </div>
-                        
-                            <div class="col-lg-4">
-                        
-                                <!-- Current server load -->
-                                <div class="panel bg-pink-400">
-                                    <div class="panel-body">
-                                        <div class="heading-elements">
-                                            <ul class="icons-list">
-                                                <li class="dropdown">
-                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                        <i class="icon-cog3"></i>
-                                                        <span class="caret"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu dropdown-menu-right">
-                                                        <li>
-                                                            <a href="#">
-                                                                <i class="icon-sync"></i> Update data</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <i class="icon-list-unordered"></i> Detailed log</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <i class="icon-pie5"></i> Statistics</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <i class="icon-cross3"></i> Clear list</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                        
-                                        <h3 class="no-margin">49.4%</h3>
-                                        Current server load
-                                        <div class="text-muted text-size-small">34.6% avg</div>
-                                    </div>
-                        
-                                    <div id="server-load"></div>
-                                </div>
-                                <!-- /current server load -->
-                        
-                            </div>
-                        
-                            <div class="col-lg-4">
-                        
-                                <!-- Today's revenue -->
-                                <div class="panel bg-blue-400">
-                                    <div class="panel-body">
-                                        <div class="heading-elements">
-                                            <ul class="icons-list">
-                                                <li>
-                                                    <a data-action="reload"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                        
-                                        <h3 class="no-margin">VNĐ 18.390.800 </h3>
-                                        Tổng doanh thu
-                                        <div class="text-muted text-size-small">$37,578 avg</div>
-                                    </div>
-                        
-                                    <div id="today-revenue"></div>
-                                </div>
-                                <!-- /today's revenue -->
-                        
-                            </div>
-                        </div>
-                        <!-- /quick stats boxes -->
 
-                        
+
+                    <div class="form-group">
+                        <label>Show calendars on left: </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control daterange-left" value="03/18/2013 - 03/23/2013">
+                            <span class="input-group-addon">
+                                <i class="icon-calendar22"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Quick stats boxes -->
+                    <div class="row">
+                        <div class="col-lg-4">
+
+                            <!-- Members online -->
+                            <div class="panel bg-teal-400">
+                                <div class="panel-body">
+                                    <div class="heading-elements">
+                                        <span class="heading-text badge bg-teal-800">+53,6%</span>
+                                    </div>
+
+                                    <h3 class="no-margin">3,450</h3>
+                                    Members online
+                                    <div class="text-muted text-size-small">489 avg</div>
+                                </div>
+
+                                <div class="container-fluid">
+                                    <div id="members-online"></div>
+                                </div>
+                            </div>
+                            <!-- /members online -->
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <!-- Current server load -->
+                            <div class="panel bg-pink-400">
+                                <div class="panel-body">
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-cog3"></i>
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-sync"></i> Update data</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-list-unordered"></i> Detailed log</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-pie5"></i> Statistics</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-cross3"></i> Clear list</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <h3 class="no-margin">49.4%</h3>
+                                    Current server load
+                                    <div class="text-muted text-size-small">34.6% avg</div>
+                                </div>
+
+                                <div id="server-load"></div>
+                            </div>
+                            <!-- /current server load -->
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <!-- Today's revenue -->
+                            <div class="panel bg-blue-400">
+                                <div class="panel-body">
+                                    <div class="heading-elements">
+                                        <ul class="icons-list">
+                                            <li>
+                                                <a data-action="reload"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <h3 class="no-margin">VNĐ 18.390.800 </h3>
+                                    Tổng doanh thu
+                                    <div class="text-muted text-size-small">$37,578 avg</div>
+                                </div>
+
+                                <div id="today-revenue"></div>
+                            </div>
+                            <!-- /today's revenue -->
+
+                        </div>
+                    </div>
+                    <!-- /quick stats boxes -->
+
 
                     <div class="row">
                         <div class="col-md-6">
-                    
+
                             <!-- Basic pie chart -->
                             <div class="panel panel-flat">
                                 <div class="panel-heading">
@@ -366,7 +370,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                    
+
                                 <div class="panel-body">
                                     <div class="chart-container has-scroll">
                                         <div class="chart has-fixed-height has-minimum-width" id="basic_pie"></div>
@@ -374,8 +378,8 @@
                                 </div>
                             </div>
                             <!-- /bacis pie chart -->
-                    
-                    
+
+
                             <!-- Nested pie charts -->
                             <div class="panel panel-flat">
                                 <div class="panel-heading">
@@ -394,7 +398,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                    
+
                                 <div class="panel-body">
                                     <div class="chart-container has-scroll">
                                         <div class="chart has-fixed-height has-minimum-width" id="nested_pie"></div>
@@ -402,8 +406,8 @@
                                 </div>
                             </div>
                             <!-- /nested pie charts -->
-                    
-                    
+
+
                             <!-- Nightingale roses width hidden labels -->
                             <div class="panel panel-flat">
                                 <div class="panel-heading">
@@ -422,7 +426,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                    
+
                                 <div class="panel-body">
                                     <div class="chart-container has-scroll">
                                         <div class="chart has-fixed-height has-minimum-width" id="rose_diagram_hidden"></div>
@@ -430,8 +434,8 @@
                                 </div>
                             </div>
                             <!-- /nightingale roses width hidden labels -->
-                    
-                    
+
+
                             <!-- Multi level donut -->
                             <div class="panel panel-flat">
                                 <div class="panel-heading">
@@ -450,7 +454,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                    
+
                                 <div class="panel-body">
                                     <div class="chart-container has-scroll">
                                         <div class="chart has-fixed-height has-minimum-width" id="lasagna_donut"></div>
@@ -458,11 +462,11 @@
                                 </div>
                             </div>
                             <!-- /multi level donut -->
-                    
+
                         </div>
-                    
+
                         <div class="col-md-6">
-                    
+
                             <!-- Basic donut chart -->
                             <div class="panel panel-flat">
                                 <div class="panel-heading">
@@ -481,7 +485,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                    
+
                                 <div class="panel-body">
                                     <div class="chart-container has-scroll">
                                         <div class="chart has-fixed-height has-minimum-width" id="basic_donut"></div>
@@ -489,8 +493,8 @@
                                 </div>
                             </div>
                             <!-- /basic donut chart -->
-                    
-                    
+
+
                             <!-- Infographic style -->
                             <div class="panel panel-flat">
                                 <div class="panel-heading">
@@ -509,7 +513,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                    
+
                                 <div class="panel-body">
                                     <div class="chart-container has-scroll">
                                         <div class="chart has-fixed-height has-minimum-width" id="infographic_donut"></div>
@@ -517,8 +521,8 @@
                                 </div>
                             </div>
                             <!-- /infographic style -->
-                    
-                    
+
+
                             <!-- Nightingale roses width visible labels -->
                             <div class="panel panel-flat">
                                 <div class="panel-heading">
@@ -537,7 +541,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                    
+
                                 <div class="panel-body">
                                     <div class="chart-container has-scroll">
                                         <div class="chart has-fixed-height has-minimum-width" id="rose_diagram_visible"></div>
@@ -545,8 +549,8 @@
                                 </div>
                             </div>
                             <!-- /nightingale roses width hidden labels -->
-                    
-                    
+
+
                             <!-- Pie chart timeline -->
                             <div class="panel panel-flat">
                                 <div class="panel-heading">
@@ -565,7 +569,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                    
+
                                 <div class="panel-body">
                                     <div class="chart-container has-scroll">
                                         <div class="chart has-fixed-height has-minimum-width" id="pie_timeline"></div>
@@ -573,13 +577,40 @@
                                 </div>
                             </div>
                             <!-- /pie chart timeline -->
-                    
+
                         </div>
                     </div>
 
-    
-                  
-    
+
+                    <!-- Multiple donut charts -->
+                    <div class="panel panel-flat">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">Multiple donuts</h5>
+                            <div class="heading-elements">
+                                <ul class="icons-list">
+                                    <li>
+                                        <a data-action="collapse"></a>
+                                    </li>
+                                    <li>
+                                        <a data-action="reload"></a>
+                                    </li>
+                                    <li>
+                                        <a data-action="close"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="chart-container has-scroll">
+                                <div class="chart has-fixed-height has-minimum-width" id="multiple_donuts" style="height: 450px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /multiple donut charts -->
+
+
+
                     <!-- Footer -->
                     <div class="footer text-muted">
                         &copy; 2015.
@@ -587,16 +618,16 @@
                         <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
                     </div>
                     <!-- /footer -->
-    
+
                 </div>
                 <!-- /content area -->
-    
+
             </div>
             <!-- /main content -->
-    
+
         </div>
         <!-- /page content -->
-    
+
     </div>
     <!-- /page container -->
 

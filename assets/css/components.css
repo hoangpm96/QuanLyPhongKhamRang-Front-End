@@ -28,6 +28,20 @@
 *  Latest update: Mar 10, 2016
 *
 * ---------------------------------------------------------------------------- */
+.select-div{
+  height:40px;
+  width:auto;
+  margin: 0 auto;
+  padding-left:10px;
+  padding-right:10px;
+  position: relative;
+  
+}
+
+.div-txt-align{
+  text-align:right;
+  padding-right:10px;
+}
 .no-transitions * {
   -webkit-transition: none !important;
   -o-transition: none !important;
