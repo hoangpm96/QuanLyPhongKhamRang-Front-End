@@ -211,9 +211,9 @@ $(function() {
 
     // Hide rest of the points
     $(".ui-slider-limits").slider({
-        max: 20,
+        max: 90,
         range: true,
-        values: [ 4, 16 ]
+        values: [ 4, 45 ]
     });
     $(".ui-slider-limits").slider("pips" , {
         rest: false
