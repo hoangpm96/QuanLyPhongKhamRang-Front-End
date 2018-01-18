@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Danh sách bác sĩ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="assets/css/core.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/components.css" rel="stylesheet" type="text/css">    
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
     <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.css">
 
@@ -27,123 +28,104 @@
     <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
     <!-- /core JS files -->
 
-    <!-- Theme JS files -->
+    Theme JS files
     <script type="text/javascript" src="assets/js/plugins/forms/wizards/stepy.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
     <script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
 
+    <script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switch.min.js"></script>
+
+
+    <script type="text/javascript" src="assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/selectboxit.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/inputs/touchspin.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/uploaders/fileinput.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/editable/editable.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/extensions/contextmenu.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/visualization/sparkline.min.js"></script>
+
     <script type="text/javascript" src="assets/js/core/app.js"></script>
     <script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
-    
-     <script src="assets/js/select/bootstrap-select.js"></script>
-     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
-     <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
-     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-     <script>
-        function swalDelete(id){
-                swal("Bạn chắc chắn muốn xóa?", {
-                 dangerMode: true,
-                 buttons: true,
-                }).then(function() {
-                    console.log("1 Remove Row")
-                    RemoveRow(id)
-                });
-            }
-            function RemoveRow(id){
-                console.log("2 Remove Row")
-                table= $('.table-bordered').DataTable()
-                console.log("3 Remove Row")
-                row= id
-                console.log("4 Remove Row")
-                table.row(row).remove().draw()
-                console.log("5 Remove Row")
-            }
 
-        $(document).ready(function(){
+    <script src="assets/js/select/bootstrap-select.js"></script>
 
-            $('#DanhSachBN').DataTable( {
-                
-            } );
 
-            $( ".btn-danger" ).on('click', function(event){
-                id= $(this).attr('stt')
-                swalDelete(id)
-            });
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-            $( "#luu" ).click(function() {
-                swal({
-                 icon: "success",
-                });
-            });
+    <script type="text/javascript" src="assets/js/pages/datatables_basic.js"></script>
+    <script type="text/javascript" src="assets/js/pages/form_checkboxes_radios.js"></script>
+    <script type="text/javascript" src="assets/js/pages/table_elements.js"></script>
 
-            $(".swal-button--danger").click(function(){
-                alert( "Handler for .click() called." );
-            });
-            });
-     </script>
     <!-- /theme JS files -->
 
 </head>
 
 <body class="has-detached-right">
 
-<!-- Main navbar -->
-<div class="navbar navbar-inverse">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="homepage.html">
-            <img src="assets/images/logo.png" alt="">
-        </a>
-        <ul class="nav navbar-nav visible-xs-block">
-            <li>
-                <a class="sidebar-mobile-main-toggle">
-                    <i class="icon-paragraph-justify3"></i>
-                </a>
-            </li>
-        </ul>
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="assets/images/logo.png" alt="">
+            </a>
+            <ul class="nav navbar-nav visible-xs-block">
+                <li>
+                    <a class="sidebar-mobile-main-toggle">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="sidebar-control sidebar-main-toggle hidden-xs">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="assets/images/doctor.jpg" alt="">
+                        <span>Bs. Trung Đức</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href="#">
+                                <i class="icon-user-plus"></i>Hồ Sơ</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-cog5"></i>Cài đặt</a>
+                        </li>
+                        <li>
+                            <a href="DangKy.html">
+                                <i class="icon-switch2"></i>Đăng xuất</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <div class="navbar-collapse collapse" id="navbar-mobile">
-        <ul class="nav navbar-nav">
-            <li>
-                <a class="sidebar-control sidebar-main-toggle hidden-xs">
-                    <i class="icon-paragraph-justify3"></i>
-                </a>
-            </li>
-        </ul>
-
-
-
-        <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown dropdown-user">
-                <a class="dropdown-toggle" data-toggle="dropdown">
-                    <img src="assets/images/doctor.jpg" alt="">
-                    <span>Bs. Trung Đức</span>
-                    <i class="caret"></i>
-                </a>
-
-                <ul class="dropdown-menu dropdown-menu-right">
-                    <li>
-                        <a href="#">
-                            <i class="icon-user-plus"></i>Hồ Sơ</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="icon-cog5"></i>Cài đặt</a>
-                    </li>
-                    <li>
-                        <a href="DangKy.html">
-                            <i class="icon-switch2"></i>Đăng xuất</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- /main navbar -->
+    <!-- /main navbar -->
 
 
     <!-- Page container -->
@@ -181,7 +163,7 @@
                                     <span>CHỨC NĂNG</span>
                                     <i class="icon-menu" title="Chức năng"></i>
                                 </li>
-                                <li >
+                                <li>
                                     <a href="homepage.html">
                                         <i class="fa fa-home"></i>
                                         <span>Trang chủ</span>
@@ -201,7 +183,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                    
+
                                 <li>
                                     <a href="DanhSachBN.html">
                                         <i class="fa fa-list"></i>
@@ -256,10 +238,10 @@
                 </div>
             </div>
             <!-- /main sidebar -->
-            
+
             <!-- Main content -->
             <div class="content-wrapper">
-                 <!-- Page header -->
+                <!-- Page header -->
                 <div class="page-header page-header-default">
                     <div class="page-header-content">
                         <div class="page-title">
@@ -275,58 +257,471 @@
                 <!-- Content area -->
                 <div class="content">
 
-                    <div class="panel panel-flat">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="input-group content-group" id="search-input">
-                                    <div class="has-feedback has-feedback-left">
-                                        <input type="text" class="form-control input-xlg " placeholder="Tìm kiếm bằng tên hoặc số điện thoại">
-                                        <div class="form-control-feedback">
-                                            <i class="icon-search4 text-muted text-size-base"></i>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="input-group-btn">
-                                        <button type="submit" class="btn btn-primary btn-xlg">Tìm</button>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="col-md-4 ">
-                                <div class=" panel-body text-center align-left">
-                                    <button type="button" class="btn btn-primary">Thêm bác sĩ</button>
-                                </div>
-                            </div>
-                        
-                        </div>
-                        
-                  
+                    <div class="panel panel-flat ">
                         <!--  List danh sách bác sĩ -->
+                        <div class="panel-heading">
+                            <!-- <h5 class="panel-title">Danh sách bác sĩ </h5> -->
+                            <div class="heading-elements">
+                                <ul class="icons-list">
 
+                                    <li>
+                                        <a data-action="reload"></a>
+                                    </li>
+
+                                </ul>
+                            </div>
                         </div>
-                    <!-- /footer -->
+
+                        <div class="panel-body">
+                            Với những bác sĩ không còn công tác,  trạng thái sẽ là
+                            <code> Ngừng hoạt động </code>
+                        </div>
+
+                        <table class="table datatable-save-state">
+                            <thead>
+                                <tr>
+                                    <th>Họ tên</th>
+
+                                    <th>Số điện thoại</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Trạng thái</th>
+                                    <th class="text-center">Xuất</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Đỗ Minh Tuấn</td>
+
+                                    <td>0164777812</td>
+                                    <td>22/02/1971</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Bách</td>
+
+                                    <td>
+                                        01628871293
+                                    </td>
+                                    <td>03/10/1983</td>
+                                    <td>
+                                        <span class="label label-danger">Ngừng hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Lê Thị Thanh Xuân</td>
+
+                                    <td>0124665812</td>
+                                    <td>19/04/1969</td>
+                                    <td>
+                                        <span class="label label-danger">Ngừng hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Trần Chung</td>
+
+                                    <td>01698873285</td>
+                                    <td>13/01/1977</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Trần Chung</td>
+                                
+                                    <td>01698873285</td>
+                                    <td>13/01/1977</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+                                
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Trần Chung</td>
+                                
+                                    <td>01698873285</td>
+                                    <td>13/01/1977</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+                                
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Trần Chung</td>
+                                
+                                    <td>01698873285</td>
+                                    <td>13/01/1977</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+                                
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Trần Chung</td>
+                                
+                                    <td>01698873285</td>
+                                    <td>13/01/1977</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+                                
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Trần Chung</td>
+                                
+                                    <td>01698873285</td>
+                                    <td>13/01/1977</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+                                
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>Nguyễn Trần Chung</td>
+
+                                    <td>01698873285</td>
+                                    <td>13/01/1977</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>Nguyễn Danh Hòa</td>
+
+                                    <td>01391573285</td>
+                                    <td>11/06/1955</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nguyễn Văn Nam</td>
+                                
+                                    <td>01698873285</td>
+                                    <td>15/01/1972</td>
+                                    <td>
+                                        <span class="label label-success">Hoạt động</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <ul class="icons-list">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="icon-menu9"></i>
+                                                </a>
+                                
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-pdf"></i> Xuất file .pdf</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-excel"></i> Xuất file .csv</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-file-word"></i> Xuất file .doc</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                  
 
                 </div>
-                <!-- /content area -->
+                <!-- /footer -->
+
+
+
 
             </div>
-            <!-- /main content -->
+            <!-- /content area -->
 
         </div>
-        <!-- /page content -
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -
 
     </div>
     <!-- /page container -->
 
 </body>
+
 </html>
 
 
-<style> 
-.align-left {
-  margin-left: 180px;
-  
-  
-  
-}
+<style>
+    .align-left {
+        margin-left: 180px;
+
+
+
+    }
 </style>
