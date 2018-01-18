@@ -257,7 +257,14 @@
 
 
               if (teethDatasource[j].teethDetails.length > 0) {
-                $(toothParentSelector2).css('fill', '#ff0000');
+
+               if (teethDatasource[j].isSelected && j === Number(currentSelectedTeeth)) {  
+                  $(toothParentSelector2).css('fill', '#e4e52f');
+                }else {
+                  $(toothParentSelector2).css('fill', '#ff0000');
+                }
+
+                
               } else {
                 if (teethDatasource[j].isSelected && j === Number(currentSelectedTeeth)) {
                   $(toothParentSelector2).css('fill', '#d721d8');
