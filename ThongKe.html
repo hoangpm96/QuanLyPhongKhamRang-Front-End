@@ -23,16 +23,7 @@
     <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
     <!-- /core JS files -->
     <!-- Theme JS files -->
-    <script type="text/javascript" src="assets/js/plugins/forms/wizards/stepy.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
-    <script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
-
-
-    <script src="assets/js/select/bootstrap-select.js"></script>
-
-
+    
     <script type="text/javascript" src="assets/js/plugins/visualization/echarts/echarts.js"></script>
     <script type="text/javascript" src="assets/js/charts/echarts/pies_donuts.js"></script>
 
@@ -52,172 +43,167 @@
     <script type="text/javascript" src="assets/js/pages/picker_date.js"></script>
 
     <script type="text/javascript" src="assets/js/core/app.js"></script>
-    <script>
-        $(document).ready(function () {
-
-        });
-    </script>
     <!-- /theme JS files -->
 </head>
 
 <body class="has-detached-right">
-    <!-- Main navbar -->
-    <div class="navbar navbar-inverse">
-        <div class="navbar-header">
-            <ul class="nav navbar-nav visible-xs-block">
-                <li>
-                    <a class="sidebar-mobile-main-toggle">
-                        <i class="icon-paragraph-justify3"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-mobile">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a class="sidebar-control sidebar-main-toggle hidden-xs">
-                        <i class="icon-paragraph-justify3"></i>
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown dropdown-user">
-                    <a class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="assets/images/avatar.jpg" alt="">
-                        <span>Trung Đức</span>
-                        <i class="caret"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li>
-                            <a href="#">
-                                <i class="icon-user-plus"></i> My profile</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="icon-cog5"></i> Account settings</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="icon-switch2"></i> Logout</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<!-- Main navbar -->
+<div class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="homepage.html">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+        <ul class="nav navbar-nav visible-xs-block">
+            <li>
+                <a class="sidebar-mobile-main-toggle">
+                    <i class="icon-paragraph-justify3"></i>
+                </a>
+            </li>
+        </ul>
     </div>
-    <!-- /main navbar -->
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="sidebar-control sidebar-main-toggle hidden-xs">
+                    <i class="icon-paragraph-justify3"></i>
+                </a>
+            </li>
+        </ul>
+
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="assets/images/doctor.jpg" alt="">
+                    <span>Bs. Trung Đức</span>
+                    <i class="caret"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a href="#">
+                            <i class="icon-user-plus"></i>Hồ Sơ</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-cog5"></i>Cài đặt</a>
+                    </li>
+                    <li>
+                        <a href="DangKy.html">
+                            <i class="icon-switch2"></i>Đăng xuất</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /main navbar -->
     <!-- Page container -->
     <div class="page-container">
 
         <!-- Page content -->
         <div class="page-content">
 
-            <!-- Main sidebar -->
-            <div class="sidebar sidebar-main">
-                <div class="sidebar-content">
-                    <!-- User menu -->
-                    <div class="sidebar-user">
-                        <div class="category-content">
-                            <div class="media">
-                                <a href="#" class="media-left">
-                                    <img src="assets/images/avatar.jpg" class="img-circle img-sm" alt="">
-                                </a>
-                                <div class="media-body">
-                                    <span class="media-heading text-semibold">Trung Đức</span>
-                                    <div class="text-size-mini text-muted">
-                                        <i class="icon-pin text-size-small"></i> Dĩ An - Bình Dương
-                                    </div>
-                                </div>
-                                <div class="media-right media-middle">
-                                    <ul class="icons-list">
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-cog3"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main">
+            <div class="sidebar-content">
+                <!-- User menu -->
+                <div class="sidebar-user">
+                    <div class="category-content">
+                        <div class="media">
+                            <a href="#" class="media-left">
+                                <img src="assets/images/doctor.jpg" class="img-circle img-sm" alt="">
+                            </a>
+                            <div class="media-body">
+                                <span class="media-heading text-semibold">Bs. Trung Đức</span>
+                                <div class="text-size-mini text-muted">
+                                    <i class="icon-pin text-size-small"></i> Dĩ An
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- /user menu -->
-                    <!-- Main navigation -->
-                    <div class="sidebar-category sidebar-category-visible">
-                        <div class="category-content no-padding">
-                            <ul class="navigation navigation-main navigation-accordion">
-                                <!-- Main -->
-                                <li class="navigation-header">
-                                    <span>CHỨC NĂNG</span>
-                                    <i class="icon-menu" title="Chức năng"></i>
-                                </li>
-                                <li class="active">
-                                    <a href="homepage.html">
-                                        <i class="icon-home4"></i>
-                                        <span>Trang chủ</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-medkit"></i>
-                                        <span>Khám răng</span>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="BenhMoi.html">Bệnh mới</a>
-                                        </li>
-                                        <li>
-                                            <a href="BenhCu.html">Bệnh cũ</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="DanhSachBN.html">
-                                        <i class="icon-list-unordered"></i>
-                                        <span>Danh sách bệnh nhân </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="QuanLyChiTieu.html">
-                                        <i class="glyphicon glyphicon-usd"></i>
-                                        <span>Quản lý chi tiêu</span>
-                                    </a>
-                                </li>
-                                <!-- /main -->
-                                <li>
-                                    <a href="sendSMS.html">
-                                        <i class="glyphicon glyphicon-envelope"></i>
-                                        <span>Gửi tin nhắn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="ThongKe.html">
-                                        <i class="icon-graph"></i>
-                                        <span>Thống Kê</span>
-                                    </a>
-                                </li>
-                                <!-- /forms -->
-                                <li>
-                                    <a href="#">
-                                        <i class="glyphicon glyphicon-cog   "></i>
-                                        <span>Cài đặt dịch vụ</span>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="DSDichVu.html">Danh sách dịch vụ</a>
-                                        </li>
-                                        <li>
-                                            <a href="appearance_panel_heading.html">Tạo dịch vụ mới</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- /appearance -->
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /main navigation -->
                 </div>
+                <!-- /user menu -->
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+                            <!-- Main -->
+                            <li class="navigation-header">
+                                <span>CHỨC NĂNG</span>
+                                <i class="icon-menu" title="Chức năng"></i>
+                            </li>
+                            <li >
+                                <a href="homepage.html">
+                                    <i class="icon-home4"></i>
+                                    <span>Trang chủ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-medkit"></i>
+                                    <span>Khám răng</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="BenhMoi.html">Bệnh mới</a>
+                                    </li>
+                                    <li>
+                                        <a href="BenhCu.html">Bệnh cũ</a>
+                                    </li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                <a href="DanhSachBN.html">
+                                    <i class="icon-list-unordered"></i>
+                                    <span>Danh sách bệnh nhân </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="QuanLyChiTieu.html">
+                                    <i class="glyphicon glyphicon-usd"></i>
+                                    <span>Quản lý chi tiêu</span>
+                                </a>
+                            </li>
+                            <!-- /main -->
+                            <li>
+                                <a href="sendSMS.html">
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                    <span>Gửi tin nhắn</span>
+                                </a>
+                            </li>
+                            <li  class="active"> 
+                                <a href="ThongKe.html">
+                                    <i class="icon-graph"></i>
+                                    <span>Thống Kê</span>
+                                </a>
+                            </li>
+                            <!-- /forms -->
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-cog   "></i>
+                                    <span>Cài đặt dịch vụ</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="DSDichVu.html">Danh sách dịch vụ</a>
+                                    </li>
+                                    <li>
+                                        <a href="appearance_panel_heading.html">Tạo dịch vụ mới</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- /appearance -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
             </div>
-            <!-- /main sidebar -->
+        </div>
+        <!-- /main sidebar -->
 
 
             <!-- Main content -->
@@ -228,7 +214,6 @@
                     <div class="page-header-content">
                         <div class="page-title">
                             <h4>
-
                                 <span class="text-semibold">Thống Kê</h4>
                         </div>
 
@@ -242,16 +227,37 @@
                 <!-- Content area -->
                 <div class="content">
 
+	                <!-- Daterange picker -->
+					<div class="panel panel-flat">
+						<div class="panel-heading">
+							<h5 class="panel-title">Chọn khoảng thời gian</h5>
+							
+						</div>
 
-                    <div class="form-group">
-                        <label>Show calendars on left: </label>
-                        <div class="input-group">
-                            <input type="text" class="form-control daterange-left" value="03/18/2013 - 03/23/2013">
-                            <span class="input-group-addon">
-                                <i class="icon-calendar22"></i>
-                            </span>
-                        </div>
-                    </div>
+						<div class="panel-body">
+							<p class="mb-15">
+                                 Chọn khoảng thời gian để xem thông tin chi tiết về 
+                                <code>doanh thu, top bệnh khám nhiều, top bác sĩ </code>
+                            </p>
+
+							<div class="row">
+								
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Click để chọn khoảng thời gian : </label>
+										<div class="input-group">
+											<input type="text" class="form-control daterange-left" value="03/18/2013 - 03/23/2013"> 
+											<span class="input-group-addon"><i class="icon-calendar22"></i></span>
+										</div>
+								</div>
+
+								
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /daterange picker -->
 
                     <!-- Quick stats boxes -->
                     <div class="row">
