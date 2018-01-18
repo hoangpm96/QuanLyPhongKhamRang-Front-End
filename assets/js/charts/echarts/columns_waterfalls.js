@@ -325,8 +325,8 @@ $(function () {
 
                 // Add legend
                 legend: {
-                    selectedMode: false,
-                    data: ['Actual', 'Forecast']
+                    selectedMode: true,
+                    data: ['Bệnh nhân mới', 'Bệnh nhân cũ']
                 },
 
                 // Enable drag recalculate
@@ -335,7 +335,7 @@ $(function () {
                 // Horizontal axis
                 xAxis: [{
                     type: 'category',
-                    data: ['Cosco', 'CMA', 'APL', 'OOCL', 'Wanhai', 'Zim', 'Maersk', 'Hanjin', 'Nyk']
+                    data: ['Cạo vôi đánh bóng', 'Nhổ Răng', 'Nhổ răng sữa', 'Nạo vét nha chu',"Răng sứ Titan"]
                 }],
 
                 // Vertical axis
@@ -347,7 +347,7 @@ $(function () {
                 // Add series
                 series: [
                     {
-                        name: 'Actual',
+                        name: 'Bệnh nhân mới',
                         type: 'bar',
                         stack: 'sum',
                         barCategoryGap: '50%',
@@ -376,7 +376,7 @@ $(function () {
                         data: [260, 200, 220, 120, 100, 80, 130, 230, 90]
                     },
                     {
-                        name: 'Forecast',
+                        name: 'Bệnh nhân cũ',
                         type: 'bar',
                         stack: 'sum',
                         itemStyle: {

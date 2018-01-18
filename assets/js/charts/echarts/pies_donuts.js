@@ -62,8 +62,8 @@ $(function () {
 
                 // Add title
                 title: {
-                    text: 'Browser popularity',
-                    subtext: 'Open source information',
+                    text: 'Trạng thái lịch hẹn',
+                    subtext: '',
                     x: 'center'
                 },
 
@@ -77,7 +77,7 @@ $(function () {
                 legend: {
                     orient: 'vertical',
                     x: 'left',
-                    data: ['IE', 'Opera', 'Safari', 'Firefox', 'Chrome']
+                    data: ['Thành công', 'Đã hủy', 'Đã đặt lịch']
                 },
 
                 // Display toolbox
@@ -134,16 +134,16 @@ $(function () {
 
                 // Add series
                 series: [{
-                    name: 'Browsers',
+                    name: 'Trạng thái',
                     type: 'pie',
                     radius: '70%',
                     center: ['50%', '57.5%'],
                     data: [
-                        {value: 335, name: 'IE'},
-                        {value: 310, name: 'Opera'},
-                        {value: 234, name: 'Safari'},
-                        {value: 135, name: 'Firefox'},
-                        {value: 1548, name: 'Chrome'}
+                      
+                        {value: 335, name:  'Thành công'},
+                        {value: 310, name: 'Đã hủy'},
+                        {value: 234, name: 'Đã đặt lịch'}
+                       
                     ]
                 }]
             };
@@ -224,7 +224,7 @@ $(function () {
                 // Add series
                 series: [
                     {
-                        name: 'Browsers',
+                        name: 'Trạng thái',
                         type: 'pie',
                         radius: ['50%', '70%'],
                         center: ['50%', '57.5%'],
@@ -278,7 +278,7 @@ $(function () {
                 legend: {
                     orient: 'vertical',
                     x: 'left',
-                    data: ['Italy','Spain','Austria','Germany','Poland','Denmark','Hungary','Portugal','France','Netherlands']
+                    data: ['3-14','15-25','26-50','Trên 50']
                 },
 
                 // Display toolbox
@@ -325,10 +325,11 @@ $(function () {
 
                 // Add series
                 series: [
-
+// Inner
+              
                     // Inner
                     {
-                        name: 'Countries',
+                        name: 'Giới tính',
                         type: 'pie',
                         selectedMode: 'single',
                         radius: [0, '40%'],
@@ -358,15 +359,15 @@ $(function () {
                         },
 
                         data: [
-                            {value: 535, name: 'Italy'},
-                            {value: 679, name: 'Spain'},
-                            {value: 1548, name: 'Austria'}
+                            {value: 535, name: 'Nam'},
+                            {value: 679, name: 'Nữ'}
+                            
                         ]
                     },
 
                     // Outer
                     {
-                        name: 'Countries',
+                        name: 'Độ tuổi',
                         type: 'pie',
                         radius: ['60%', '85%'],
 
@@ -379,16 +380,14 @@ $(function () {
                         max: 1048,
 
                         data: [
-                            {value: 535, name: 'Italy'},
-                            {value: 310, name: 'Germany'},
-                            {value: 234, name: 'Poland'},
-                            {value: 135, name: 'Denmark'},
-                            {value: 948, name: 'Hungary'},
-                            {value: 251, name: 'Portugal'},
-                            {value: 147, name: 'France'},
-                            {value: 202, name: 'Netherlands'}
+                            {value: 535, name: '3-14'},
+                            {value: 310, name: '15-25'},
+                            {value: 234, name: '26-50'},
+                            {value: 135, name: 'Trên 50'}
+                            
                         ]
                     }
+                    
                 ]
             };
 
@@ -422,8 +421,8 @@ $(function () {
 
                 // Add title
                 title: {
-                    text: 'Are you happy?',
-                    subtext: 'Utrecht, Netherlands',
+                    text: 'Chi tiết lịch hẹn',
+                    subtext: '',
                     x: 'center',
                     y: 'center',
                     itemGap: 10,
@@ -447,7 +446,7 @@ $(function () {
                     y: 30,
                     x: '55%',
                     itemGap: 15,
-                    data: ['60% Definitely yes','30% Could be better','10% Not at the moment']
+                    data: ['90% Thành công','10% Đã hủy']
                 },
 
                 // Add series
@@ -460,13 +459,12 @@ $(function () {
                         itemStyle: dataStyle,
                         data: [
                             {
-                                value: 60,
-                                name: '60% Definitely yes'
+                                value: 90,
+                                name: '60% Thành công'
                             },
                             {
-                                value: 40,
-                                name: 'invisible',
-                                itemStyle: placeHolderStyle
+                                value: 10,
+                                name: '10% Đã hủy'
                             }
                         ]
                     },
