@@ -33,36 +33,36 @@ $(function() {
 
             //    stepy - validation;
                //.stepy-callbacks
-               // // Stepy callbacks
-               $(".stepy-callbacks").stepy({
-                 next: function(index) {
-                  //  alert("Going to step: " + index);
-                 },
-                 back: function(index) {
-                  //  alert("Returning to step: " + index);
-                 },
-                 finish: function() {
-                  //  alert("Submit canceled.");
-                   return false;
-                 }
-               });
+              //  // // Stepy callbacks
+              //  $(".stepy-callbacks").stepy({
+              //    next: function(index) {
+              //     //  alert("Going to step: " + index);
+              //    },
+              //    back: function(index) {
+              //     //  alert("Returning to step: " + index);
+              //    },
+              //    finish: function() {
+              //     //  alert("Submit canceled.");
+              //      return false;
+              //    }
+              //  });
 
                //
                // Validation
                //
 
                // Initialize wizard
-               $(".stepy-validation").stepy({
-                 validate: true,
-                 block: true,
-                 next: function(index) {
-                   if (
-                     !$(".stepy-validation").validate(validate)
-                   ) {
-                     return false;
-                   }
-                 }
-               });
+              //  $(".stepy-validation").stepy({
+              //    validate: true,
+              //    block: true,
+              //    next: function(index) {
+              //      if (
+              //        !$(".stepy-validation").validate(validate)
+              //      ) {
+              //        return false;
+              //      }
+              //    }
+              //  });
 
                // Initialize validation
                var validate = { ignore: "input[type=hidden], .select2-search__field", errorClass: "validation-error-label", successClass: "validation-valid-label", highlight: function(element, errorClass) { // ignore hidden fields

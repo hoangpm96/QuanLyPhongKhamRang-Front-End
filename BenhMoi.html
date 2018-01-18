@@ -51,7 +51,9 @@
 
       for (let i = 1; i <= 32; i++) {
         teethDatasource[i] = {
-          teethDetails: []
+          teethDetails: [
+          
+          ]
         };
       }
 
@@ -159,18 +161,20 @@
 
       })
 
-      // $(".stepy-callbacks").stepy({
-      //   next: function (index) {
-      //     alert("Going to step: " + index);
-      //   },
-      //   back: function (index) {
-      //     alert("Returning to step: " + index);
-      //   },
-      //   finish: function () {
-      //     alert("Submit canceled.");
-      //     return false;
-      //   }
-      // });
+      $(".stepy-callbacks").stepy({
+        next: function (index) {
+          // alert("Going to step: " + index);
+        },
+        back: function (index) {
+          // alert("Returning to step: " + index);
+        },
+        finish: function () {
+          // alert("Submit canceled.");
+          return false;
+        }
+      });
+       $('.stepy-step').find('.button-next').addClass('btn btn-primary');
+      $('.stepy-step').find('.button-back').addClass('btn btn-default');
 
       // Submit button
       $('.stepy-finish').on('click', function () {

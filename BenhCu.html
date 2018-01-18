@@ -49,11 +49,23 @@
         var teethDatasource = [];
 
         for (let i = 1; i <= 32; i++) {
-          teethDatasource[i] = {
-            teethDetails: []
-          };
+          if ( i % 3 === 0 ) {
+            teethDatasource[i] = {
+              teethDetails: [
+                { id: "1", content: "Kham rang 1" },
+                { id: "2", content: "Kham rang 2" }
+              ]
+            };
+          }else {
+            teethDatasource[i] = {
+              teethDetails: [
+              ]
+            };
+          }
+          
         }
 
+        prepareTeeth();
         // $('.step-2').ready(function(){
         //   debugger;
         // })    
@@ -158,18 +170,24 @@
 
         })
 
-        // $(".stepy-callbacks").stepy({
-        //   next: function (index) {
-        //     alert("Going to step: " + index);
-        //   },
-        //   back: function (index) {
-        //     alert("Returning to step: " + index);
-        //   },
-        //   finish: function () {
-        //     alert("Submit canceled.");
-        //     return false;
-        //   }
-        // });
+        $(".stepy-callbacks").stepy({
+          next: function (index) {
+            if ( index === 1 ) {
+              debugger;
+              
+            }
+            // alert("Going to step: " + index);
+          },
+          back: function (index) {
+            // alert("Returning to step: " + index);
+          },
+          finish: function () {
+            // alert("Submit canceled.");
+            return false;
+          }
+        });
+         $('.stepy-step').find('.button-next').addClass('btn btn-primary');
+        $('.stepy-step').find('.button-back').addClass('btn btn-default');
 
         // Submit button
         $('.stepy-finish').on('click', function () {
@@ -216,7 +234,7 @@
           const toothSelector = '.tooth-' + i;
           const toothParentSelector = '.tooth-' + i + '-parent';
 
-          debugger;
+          
           $(toothSelector).mouseenter(function () {
 
             $(toothParentSelector).css('fill', '#9ce3ec');
@@ -282,6 +300,47 @@
 
             });
 
+
+        }
+        
+        function prepareTeeth() {
+          debugger;
+          for (var i = 1; i <= 32; i++) {
+
+
+            const toothSelector = '.tooth-' + i;
+            const toothParentSelector = '.tooth-' + i + '-parent';
+            if (teethDatasource[i].teethDetails.length > 0) {
+              
+              $(toothParentSelector).css('fill', '#ff0000');
+            } else {
+              $(toothParentSelector).css('fill', '#ffffff');
+            }
+
+
+            $(toothSelector).mouseenter(function () {
+              $(toothParentSelector).css('fill', '#9ce3ec');
+            });
+
+
+            $(toothSelector).mouseleave(function () {
+
+              let seperatedName = this.className.baseVal.split(' ');
+
+              var teethNumber = seperatedName[0].replace(/^\D+/g, '');
+
+              currentSelectedTeeth = teethNumber;
+
+              if (teethDatasource[currentSelectedTeeth].length > 0) {
+                $(toothParentSelector).css('fill', '#ff0000');
+              } else {
+                $(toothParentSelector).css('fill', '#ffffff');
+
+              }
+            });
+
+
+          }
 
         }
       });
@@ -615,7 +674,7 @@
 						<div class="panel-heading">
 							<h4 class="panel-title"> <b>Khám răng</b> </h4>
 						</div>
-	                	<form class="stepy-validation" action="#">
+	                	<form class="stepy-callbacks" action="#">
 							<fieldset title="1">
 								<legend class="text-semibold">Danh sách bệnh nhân</legend>
 								<div>
