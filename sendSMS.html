@@ -28,7 +28,7 @@
     <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
     <!-- /core JS files -->
 
-    Theme JS files
+    <!-- Theme JS files -->
     <script type="text/javascript" src="assets/js/plugins/forms/wizards/stepy.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
@@ -54,9 +54,18 @@
     <script type="text/javascript" src="assets/js/plugins/extensions/contextmenu.js"></script>
     <script type="text/javascript" src="assets/js/plugins/visualization/sparkline.min.js"></script>
 
-    <script type="text/javascript" src="assets/js/core/app.js"></script>
-    <script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
 
+    <script type="text/javascript" src="assets/js/core/libraries/jquery_ui/widgets.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery_ui/touch.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/sliders/slider_pips.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/pages/form_checkboxes_radios.js"></script> -->
+    
+<!-- <script type="text/javascript" src="assets/js/pages/picker_date.js"></script> -->
+    
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    
+<script type="text/javascript" src="assets/js/pages/jqueryui_sliders.js"></script>
 
     <script src="assets/js/select/bootstrap-select.js"></script>
 
@@ -66,6 +75,7 @@
     <script type="text/javascript" src="assets/js/pages/datatables_basic.js"></script>
     <script type="text/javascript" src="assets/js/pages/form_checkboxes_radios.js"></script>
     <script type="text/javascript" src="assets/js/pages/table_elements.js"></script>
+    
 
     <!-- /theme JS files -->
 
@@ -283,9 +293,129 @@
                                     </div>
                                 </div>
                                 <div class="panel-body">
-                                    <table class="table datatable-save-state">
-                                       
-                                    </table>
+                                        <div class="panel panel-body ">
+                                            <div class="text-center">
+                                                <h6 class="no-margin text-semibold">Độ tuổi</h6>
+                                                
+                                            </div>
+                                            <div class="ui-slider-limits ui-slider-danger"></div>
+                                        </div>
+
+                                        <!-- Gioi tinh -->
+                                        <div class="panel panel-body ">
+                                            <div class="text-center">
+                                                <h6 class="no-margin text-semibold">Giới tính</h6>
+                                        
+                                            </div>
+                                            
+                                             <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <label class="radio-inline">
+                                                                <input type="radio" name="radio-inline-left" class="styled" checked="checked"> Tất cả
+                                                            </label>
+                                                         </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-inline">
+                                                                <input type="radio" name="radio-inline-left" class="styled"> Nam
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-inline">
+                                                                <input type="radio" name="radio-inline-left" class="styled"> Nữ
+                                                            </label>
+                                                        </div>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                            
+
+                                                    </div>
+                                                   
+                                            </div>
+                                            
+                                        </div>
+                                        <!-- Gioi tinh -->
+
+                                        <!-- Loai benh nhan -->
+                                        <div class="panel panel-body ">
+                                            <div class="text-center">
+                                                <h6 class="no-margin text-semibold">Loại bệnh nhân</h6>
+                                        
+                                            </div>
+                                        
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio-inline-left" class="styled" checked="checked"> Tất cả
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio-inline-left" class="styled"> Bệnh nhân mới
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio-inline-left" class="styled"> Bệnh nhân cũ
+                                                        </label>
+                                                    </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                                </div>
+                                        
+                                            </div>
+                                        
+                                        </div>
+                                        <!-- Loai benh nhan -->
+
+                                        <!-- Ngay kham -->
+                                        <div class="panel panel-body ">
+                                            <div class="text-center">
+                                                <h6 class="no-margin text-semibold">Ngày khám bệnh</h6>
+                                        
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Click để chọn thời gian: </label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="icon-calendar22"></i>
+                                                    </span>
+                                                    <input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio-inline-left" class="styled" checked="checked"> Hôm qua
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio-inline-left" class="styled"> 7 ngày gần nhất
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="radio-inline-left" class="styled"> 30 ngày gần nhất
+                                                        </label>
+                                                    </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                                </div>
+                                        
+                                            </div>
+                                        
+                                        </div>
+                                        <!-- Ngay kham -->
                                 </div>
                         
                         
@@ -350,6 +480,49 @@
                                                         <input type="checkbox" class="styled" checked="checked">
                                                     </td>
                                                 </tr>
+                                                <tr>
+                                                    <td>Nguyễn Huy Toàn</td>
+                                                    <td>
+                                                        <input type="checkbox" class="styled" checked="checked">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nguyễn Văn Toàn</td>
+                                                    <td>
+                                                        <input type="checkbox" class="styled" checked="checked">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Phan Văn Hậu</td>
+                                                    <td>
+                                                        <input type="checkbox" class="styled" checked="checked">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nguyễn Quang Hải</td>
+                                                    <td>
+                                                        <input type="checkbox" class="styled" checked="checked">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mỹ Tâm</td>
+                                                    <td>
+                                                        <input type="checkbox" class="styled" checked="checked">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hương Giang</td>
+                                                    <td>
+                                                        <input type="checkbox" class="styled" checked="checked">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chi Pu</td>
+                                                    <td>
+                                                        <input type="checkbox" class="styled" checked="checked">
+                                                    </td>
+                                                </tr>
+                                             
                                             </tbody>
                                         </table>
                                     </div>
@@ -361,7 +534,7 @@
                         </div>
 
 
-                        <div class="row"> 
+                        <div class="row" > 
                             <div class="col-md-12">
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
@@ -415,15 +588,123 @@
 
                             
                         </div>
+
+
+                            <div class="row" hidden>
+                                <div class="col-md-4">
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin text-semibold">Basic slider example</h6>
+                                            <p class="content-group text-muted">Example of basic jQuery UI slider</p>
+                                        </div>
+                            
+                                        <div class="ui-slider mb-5"></div>
+                                    </div>
+                            
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin text-semibold">Values range slider</h6>
+                                            <p class="content-group text-muted">Use
+                                                <code>range: true</code> to show ranges</p>
+                                        </div>
+                            
+                                        <div class="ui-slider-range mb-5"></div>
+                                    </div>
+                            
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin text-semibold">Animated slider</h6>
+                                            <p class="content-group text-muted">Use
+                                                <code>animate: true</code> to animate slider</p>
+                                        </div>
+                            
+                                        <div class="ui-slider-animated mb-5"></div>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin text-semibold">Custom start value</h6>
+                                            <p class="content-group text-muted">Set start value using
+                                                <code>value</code> option</p>
+                                        </div>
+                            
+                                        <div class="ui-slider-value mb-5"></div>
+                                    </div>
+                            
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin text-semibold">Fixed minimum range</h6>
+                                            <p class="content-group text-muted">Set min value with
+                                                <code>range: 'min'</code> option</p>
+                                        </div>
+                            
+                                        <div class="ui-slider-range-min mb-5"></div>
+                                    </div>
+                            
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin mb-5 text-semibold">Slider methods</h6>
+                                            <p class="content-group text-muted">
+                                                <label class="checkbox-inline checkbox-switchery switchery-xs switchery-double">
+                                                    Disable slider
+                                                    <input type="checkbox" class="switchery" checked="checked"> Enable slider
+                                                </label>
+                                            </p>
+                                        </div>
+                            
+                                        <div class="ui-slider-methods mb-5"></div>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin text-semibold">Snap to increments</h6>
+                                            <p class="content-group text-muted">Increment values with the
+                                                <code>step</code> option</p>
+                                        </div>
+                            
+                                        <div class="ui-slider-increments mb-5"></div>
+                                    </div>
+                            
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin text-semibold">Fixed maximum range</h6>
+                                            <p class="content-group text-muted">Set max value with
+                                                <code>range: 'max'</code> option</p>
+                                        </div>
+                            
+                                        <div class="ui-slider-range-max mb-5"></div>
+                                    </div>
+                            
+                                    <div class="panel panel-body border-top-primary">
+                                        <div class="text-center">
+                                            <h6 class="no-margin text-semibold">Disabled slider</h6>
+                                            <p class="content-group text-muted">Use
+                                                <code>disabled: true</code> to disable slider</p>
+                                        </div>
+                            
+                                        <div class="ui-slider-disabled mb-5"></div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
 
 
 
                 </div>
-                <!-- /footer -->
+        
 
 
-
+                    <!-- Footer -->
+                    <div class="footer text-muted">
+                             &copy; 2018
+                    
+                        <a href="homepage.html" target="_blank">HHK</a>
+                    </div>
+                    <!-- /footer -->
 
             </div>
             <!-- /content area -->

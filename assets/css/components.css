@@ -11341,8 +11341,8 @@ body.stop-scrolling {
 }
 .ui-slider-danger .ui-slider-range,
 .ui-slider-solid.ui-slider-danger .ui-slider-handle {
-  background-color: #F44336;
-  border-color: #F44336;
+  background-color: #26A69A;
+  border-color: #26A69A;
 }
 .ui-slider-success .ui-slider-range,
 .ui-slider-solid.ui-slider-success .ui-slider-handle {
