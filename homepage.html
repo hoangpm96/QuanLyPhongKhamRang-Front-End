@@ -6,34 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phòng khám nha khoa Trung Đức</title>
-    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/dental-blue-icons/512/Untitled-1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Global stylesheets -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
-    <!-- /global stylesheets -->
-    <!-- Core JS files -->
-    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
-    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
-    <!-- /core JS files -->
-    <!-- Theme JS files -->
-    <script type="text/javascript" src="assets/js/plugins/forms/wizards/stepy.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
-    <script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
-    <script type="text/javascript" src="assets/js/core/app.js"></script>
-    <script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
-    <script src="assets/js/select/bootstrap-select.js"></script>
-    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
+        <!-- Global stylesheets -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+        <!-- /global stylesheets -->
+        
+        <!-- Core JS files -->
+        <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+        <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+        <!-- /core JS files -->
+        
+        <!-- Theme JS files -->
+        <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+        
+        <script type="text/javascript" src="assets/js/core/app.js"></script>
+        <script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
 
     <link rel="stylesheet" href="styles/kendo.common.min.css" />
     <link rel="stylesheet" href="styles/kendo.default.min.css" />
@@ -142,25 +142,48 @@
     <!-- Main navbar -->
     <div class="navbar navbar-inverse">
         <div class="navbar-header">
+            <a class="navbar-brand" href="homepage.html"><img src="assets/images/logo.png" alt=""></a>
             <ul class="nav navbar-nav visible-xs-block">
-                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+                <li>
+                    <a class="sidebar-mobile-main-toggle">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
             </ul>
         </div>
+    
         <div class="navbar-collapse collapse" id="navbar-mobile">
             <ul class="nav navbar-nav">
-                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+                <li>
+                    <a class="sidebar-control sidebar-main-toggle hidden-xs">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
             </ul>
+    
+    
+    
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown dropdown-user">
                     <a class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="assets/images/avatar.jpg" alt="">
-                        <span>Trung Đức</span>
+                        <img src="assets/images/doctor.jpg" alt="">
+                        <span>Bs. Trung Đức</span>
                         <i class="caret"></i>
                     </a>
+    
                     <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
-                        <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
-                        <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-user-plus"></i>Hồ Sơ</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-cog5"></i>Cài đặt</a>
+                        </li>
+                        <li>
+                            <a href="DangKy.html">
+                                <i class="icon-switch2"></i>Đăng xuất</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -174,28 +197,23 @@
             <!-- Main sidebar -->
             <div class="sidebar sidebar-main">
                 <div class="sidebar-content">
-                    <!-- User menu -->
-                    <div class="sidebar-user">
-                        <div class="category-content">
-                            <div class="media">
-                                <a href="#" class="media-left"><img src="assets/images/avatar.jpg" class="img-circle img-sm" alt=""></a>
-                                <div class="media-body">
-                                    <span class="media-heading text-semibold">Trung Đức</span>
-                                    <div class="text-size-mini text-muted">
-                                        <i class="icon-pin text-size-small"></i> Dĩ An - Bình Dương
-                                    </div>
-                                </div>
-                                <div class="media-right media-middle">
-                                    <ul class="icons-list">
-                                        <li>
-                                            <a href="#"><i class="icon-cog3"></i></a>
-                                        </li>
-                                    </ul>
+                <!-- User menu -->
+                <div class="sidebar-user">
+                    <div class="category-content">
+                        <div class="media">
+                            <a href="#" class="media-left">
+                                <img src="assets/images/doctor.jpg" class="img-circle img-sm" alt="">
+                            </a>
+                            <div class="media-body">
+                                <span class="media-heading text-semibold">Bs. Trung Đức</span>
+                                <div class="text-size-mini text-muted">
+                                    <i class="icon-pin text-size-small"></i> Dĩ An
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- /user menu -->
+                </div>
+                <!-- /user menu -->
                     <!-- Main navigation -->
                     <div class="sidebar-category sidebar-category-visible">
                         <div class="category-content no-padding">
@@ -204,19 +222,13 @@
                                 <li class="navigation-header"><span>CHỨC NĂNG</span> <i class="icon-menu" title="Chức năng"></i></li>
                                 <li class="active"><a href="homepage.html"><i class="icon-home4"></i> <span>Trang chủ</span></a></li>
                                 <li>
-                                    <a href="#">
-                                        <i class="fa fa-medkit"></i>
-                                        <span>Khám răng</span>
-                                    </a>
+                                    <a href="#"> <i class="fa fa-medkit"></i> <span>Khám răng</span></a>
                                     <ul>
-                                        <li>
-                                            <a href="BenhMoi.html">Bệnh mới</a>
-                                        </li>
-                                        <li>
-                                            <a href="BenhCu.html">Bệnh cũ</a>
-                                        </li>
+                                        <li><a href="BenhMoi.html">Bệnh mới</a></li>
+                                        <li><a href="BenhCu.html">Bệnh cũ</a></li>
                                     </ul>
                                 </li>
+                                
                                 <li><a href="DanhSachBN.html"><i class="icon-list-unordered"></i> <span>Danh sách bệnh nhân </span></a></li>
                                 <li><a href="QuanLyChiTieu.html"><i class="glyphicon glyphicon-usd"></i> <span>Quản lý chi tiêu</span></a></li>
                                 <!-- /main -->
