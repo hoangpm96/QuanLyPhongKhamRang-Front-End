@@ -6056,7 +6056,7 @@ a.list-group-item-danger:focus {
   margin-left: 20px;
 }
 .panel-body:hover  {
-  filter: drop-shadow(8px 8px 10px gray);
+  /* filter: drop-shadow(8px 8px 10px gray); */
 }
 .panel[class*=border-top-] {
   border-top-right-radius: 0;

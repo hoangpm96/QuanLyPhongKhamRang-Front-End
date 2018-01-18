@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+    <title>Danh sách bệnh nhân</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- Global stylesheets -->
@@ -91,110 +91,59 @@
 
 <body class="has-detached-right">
 
-    <!-- Main navbar -->
-    <div class="navbar navbar-inverse">
-        <div class="navbar-header">
-            
-
-            <ul class="nav navbar-nav visible-xs-block">
-                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
-            </ul>
-        </div>
-
-        <div class="navbar-collapse collapse" id="navbar-mobile">
-            <ul class="nav navbar-nav">
-                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
-
-                <li class="dropdown">
-                    
-                    
-                    <div class="dropdown-menu dropdown-content">
-                        
-
-                        <ul class="media-list dropdown-content-body width-350">
-                            <li class="media">
-                                <div class="media-left">
-                                    <a href="#" class="btn border-primary text-primary btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-pull-request"></i></a>
-                                </div>
-
-                                <div class="media-body">
-                                    Drop the IE <a href="#">specific hacks</a> for temporal inputs
-                                    <div class="media-annotation">4 minutes ago</div>
-                                </div>
-                            </li>
-
-                            <li class="media">
-                                <div class="media-left">
-                                    <a href="#" class="btn border-warning text-warning btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-commit"></i></a>
-                                </div>
-                                
-                                <div class="media-body">
-                                    Add full font overrides for popovers and tooltips
-                                    <div class="media-annotation">36 minutes ago</div>
-                                </div>
-                            </li>
-
-                            <li class="media">
-                                <div class="media-left">
-                                    <a href="#" class="btn border-info text-info btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-branch"></i></a>
-                                </div>
-                                
-                                <div class="media-body">
-                                    <a href="#">Chris Arney</a> created a new <span class="text-semibold">Design</span> branch
-                                    <div class="media-annotation">2 hours ago</div>
-                                </div>
-                            </li>
-
-                            <li class="media">
-                                <div class="media-left">
-                                    <a href="#" class="btn border-success text-success btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-merge"></i></a>
-                                </div>
-                                
-                                <div class="media-body">
-                                    <a href="#">Eugene Kopyov</a> merged <span class="text-semibold">Master</span> and <span class="text-semibold">Dev</span> branches
-                                    <div class="media-annotation">Dec 18, 18:36</div>
-                                </div>
-                            </li>
-
-                            <li class="media">
-                                <div class="media-left">
-                                    <a href="#" class="btn border-primary text-primary btn-flat btn-rounded btn-icon btn-sm"><i class="icon-git-pull-request"></i></a>
-                                </div>
-                                
-                                <div class="media-body">
-                                    Have Carousel ignore keyboard events
-                                    <div class="media-annotation">Dec 12, 05:46</div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <div class="dropdown-content-footer">
-                            <a href="#" data-popup="tooltip" title="All activity"><i class="icon-menu display-block"></i></a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            
-
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown dropdown-user">
-                    <a class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="assets/images/placeholder.jpg" alt="">
-                        <span>NguyenHien</span>
-                        <i class="caret"></i>
-                    </a>
-
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
-                        <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
-                        <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<!-- Main navbar -->
+<div class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="homepage.html">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+        <ul class="nav navbar-nav visible-xs-block">
+            <li>
+                <a class="sidebar-mobile-main-toggle">
+                    <i class="icon-paragraph-justify3"></i>
+                </a>
+            </li>
+        </ul>
     </div>
-    <!-- /main navbar -->
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="sidebar-control sidebar-main-toggle hidden-xs">
+                    <i class="icon-paragraph-justify3"></i>
+                </a>
+            </li>
+        </ul>
+
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="assets/images/doctor.jpg" alt="">
+                    <span>Bs. Trung Đức</span>
+                    <i class="caret"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a href="#">
+                            <i class="icon-user-plus"></i>Hồ Sơ</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-cog5"></i>Cài đặt</a>
+                    </li>
+                    <li>
+                        <a href="DangKy.html">
+                            <i class="icon-switch2"></i>Đăng xuất</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /main navbar -->
 
 
     <!-- Page container -->
@@ -206,81 +155,117 @@
             <!-- Main sidebar -->
             <div class="sidebar sidebar-main">
                 <div class="sidebar-content">
-
                     <!-- User menu -->
                     <div class="sidebar-user">
                         <div class="category-content">
                             <div class="media">
-                                <a href="#" class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+                                <a href="#" class="media-left">
+                                    <img src="assets/images/doctor.jpg" class="img-circle img-sm" alt="">
+                                </a>
                                 <div class="media-body">
-                                    <span class="media-heading text-semibold">Nguyen Hien</span>
+                                    <span class="media-heading text-semibold">Bs. Trung Đức</span>
                                     <div class="text-size-mini text-muted">
-                                        <i class="icon-pin text-size-small"></i> Bs.Duc
+                                        <i class="icon-pin text-size-small"></i> Dĩ An
                                     </div>
-                                </div>
-
-                                <div class="media-right media-middle">
-                                    <ul class="icons-list">
-                                        <li>
-                                            <a href="#"><i class="icon-cog3"></i></a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- /user menu -->
-
-
                     <!-- Main navigation -->
                     <div class="sidebar-category sidebar-category-visible">
                         <div class="category-content no-padding">
                             <ul class="navigation navigation-main navigation-accordion">
-
                                 <!-- Main -->
-                                <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
-                                <li ><a href="index.html"><i class="icon-home4"></i> <span>Trang chủ</span></a></li>
+                                <li class="navigation-header">
+                                    <span>CHỨC NĂNG</span>
+                                    <i class="icon-menu" title="Chức năng"></i>
+                                </li>
+                                <li class="active">
+                                    <a href="homepage.html">
+                                        <i class="icon-home4"></i>
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-medkit"></i> <span>Khám răng</span></a>
+                                    <a href="#">
+                                        <i class="fa fa-medkit"></i>
+                                        <span>Khám răng</span>
+                                    </a>
                                     <ul>
-                                        <li><a href="BenhMoi.html">Bệnh mới</a></li>
-                                        <li><a href="BenhCu.html">Bệnh cũ</a></li>
+                                        <li>
+                                            <a href="BenhMoi.html">Bệnh mới</a>
+                                        </li>
+                                        <li>
+                                            <a href="BenhCu.html">Bệnh cũ</a>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="active"><a href="DanhSachBN.html"><i class="icon-list-unordered"></i> <span>Danh sách bệnh nhân </span></a></li>
-                                <li><a href="QuanLyChiTieu.html"><i class="glyphicon glyphicon-usd"></i> <span>Quản lý chi tiêu</span></a></li>
+            
+                                <li>
+                                    <a href="DanhSachBN.html">
+                                        <i class="icon-list-unordered"></i>
+                                        <span>Danh sách bệnh nhân </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="QuanLyChiTieu.html">
+                                        <i class="glyphicon glyphicon-usd"></i>
+                                        <span>Quản lý chi tiêu</span>
+                                    </a>
+                                </li>
                                 <!-- /main -->
                                 <li>
-                                    <a href="GuiTinNhan.html"><i class="glyphicon glyphicon-envelope"></i> <span>Gửi tin nhắn</span></a>  
+                                    <a href="sendSMS.html">
+                                        <i class="glyphicon glyphicon-envelope"></i>
+                                        <span>Gửi tin nhắn</span>
+                                    </a>
                                 </li>
-                                <!-- /forms -->
-
                                 <li>
                                     <a href="ThongKe.html">
                                         <i class="icon-graph"></i>
                                         <span>Thống Kê</span>
                                     </a>
                                 </li>
+                                <!-- /forms -->
                                 <li>
-                                    <a href="#"><i class="glyphicon glyphicon-cog   "></i> <span>Cài đặt dịch vụ</span></a>
+                                    <a href="#">
+                                        <i class="glyphicon glyphicon-cog   "></i>
+                                        <span>Cài đặt dịch vụ</span>
+                                    </a>
                                     <ul>
-                                        <li><a href="DSDichVu   .html">Danh sách dịch vụ</a></li>
-                                        <li><a href="appearance_panel_heading.html">Tạo dịch vụ mới</a></li>
+                                        <li>
+                                            <a href="DSDichVu.html">Danh sách dịch vụ</a>
+                                        </li>
+                                        <li>
+                                            <a href="DichVuMoi.html">Tạo dịch vụ mới</a>
+                                        </li>
                                     </ul>
                                 </li>
-                                
                                 <!-- /appearance -->
                             </ul>
                         </div>
                     </div>
                     <!-- /main navigation -->
-
                 </div>
             </div>
             <!-- /main sidebar -->
             
             <!-- Main content -->
             <div class="content-wrapper">
+                 <!-- Page header -->
+                <div class="page-header page-header-default">
+                    <div class="page-header-content">
+                        <div class="page-title">
+                            <h4>
+                                <span class="text-semibold">Danh sách bệnh nhân</h4>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- /page header -->
                 <!-- Content area -->
                 <div class="content">
 
@@ -298,6 +283,7 @@
                             </div>
                         </div>
                         <div class="row patient-row">
+                            
                             <div class="col-lg-4 col-md-6 patient-col">
                                 <div class="panel panel-body">
                                     <div class="media">
@@ -308,7 +294,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Trần Văn Dũng</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -328,7 +314,7 @@
                                             <a href="GuiTinNhan.html" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -345,7 +331,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Phan Anh</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -365,7 +351,7 @@
                                             <a href="#" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em;color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em;color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em;color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -382,7 +368,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Nguyễn Thị Lệ Hằng</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -402,7 +388,7 @@
                                             <a href="#" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -420,7 +406,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Trường Giang</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -440,7 +426,7 @@
                                             <a href="#" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -457,7 +443,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Cao Kỳ Duyên</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -477,7 +463,7 @@
                                             <a href="#" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -494,7 +480,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Huyền My</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -514,7 +500,7 @@
                                             <a href="#" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -532,7 +518,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Công Phượng</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -552,7 +538,7 @@
                                             <a href="#" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -569,7 +555,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Đức Phúc</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -589,7 +575,7 @@
                                             <a href="#" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -606,7 +592,7 @@
                                         </div>
 
                                         <div class="media-body">
-                                            <h6 class="media-heading">Nguyễn Văn A</h6>
+                                            <h6 class="media-heading">Bùi Thu Thủy</h6>
                                             <span class="text-muted" > 
                                                 <div class="icon-phone2"> </div>  0162 675 6210
                                              </span>
@@ -626,7 +612,7 @@
                                             <a href="#" data-popup="tooltip" title="" data-original-title="Gửi tin nhắn"><i class="icon-mail5" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                             <div class="icon-select">
-                                            <a href="#" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
+                                            <a href="HoSoBenhNhan.html" data-popup="tooltip" title="" data-original-title="Chỉnh sửa"><i class="glyphicon glyphicon-wrench" style="font-size: 1.5em; color: #26A69A;"></i></a>
                                             </div>
                                         </div>
                                     </div>
