@@ -16,7 +16,6 @@
 	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/css/bootstrap-select.css">
 	<!-- /global stylesheets -->
-
 	<!-- Core JS files -->
 	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
 	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
@@ -36,6 +35,12 @@
 	
 	 <script src="assets/js/select/bootstrap-select.js"></script>
 	<!-- /theme JS files -->
+	<style type="text/css">
+		#div-tongtien{
+	  margin-top: 23px;
+	}
+
+	</style>
 	<script>
 		$(document).ready(function(){
 			$('.tooth-11').mouseover(function(){
@@ -668,7 +673,7 @@ $('.tooth-48').mouseleave(function(){
 										</div>	
 									</div>
 									<div class="form-group">
-										<label>Date of birth:</label>
+										<label>Ngày sinh:</label>
 										<div>
 										<div class="row">
 											<div class="col-md-4">
@@ -1771,7 +1776,7 @@ $('.tooth-48').mouseleave(function(){
 									<div class="col-md-6">
 										<div class="form-group">
 											<label>Số điện thoại <span class="text-danger">*</span></label>
-			                                <input type="text" name="experience-company" placeholder="Company name" class="form-control required">
+			                                <input type="text" name="experience-company" placeholder="0123 467 5595" class="form-control required">
 		                                </div>
 
 										<div class="form-group">
@@ -1798,11 +1803,7 @@ $('.tooth-48').mouseleave(function(){
 
 								<div class="panel panel-flat" id="release">
 								<div class="panel-heading">
-									<h5 class="panel-title"><b>Danh sách lịch hẹn khám hôm nay</b></h5>
-									<div class="heading-elements">
-										<span class="text-muted heading-text">October 1, 2015</span>
-										
-					            	</div>
+									<h5 class="panel-title"><b>Danh sách các dịch vụ đã dùng</b></h5>
 								</div>
 								<div class="table-responsive">
 									<table class="table table-striped">
@@ -1818,69 +1819,44 @@ $('.tooth-48').mouseleave(function(){
 											<td>Đính đá</td>
 											<td>2</td>
 											<td>
-												<select name="source" data-placeholder="Choose an option..." class="select-simple required">
+												<select name="source" data-placeholder="Chọn đơn giá" class="select-simple required">
 													<option></option> 
-													<option value="monster">Monster.com</option> 
-													<option value="linkedin">LinkedIn</option> 
-													<option value="google">Google</option> 
-													<option value="adwords">Google AdWords</option> 
-													<option value="other">Other source</option>
+													<option value="monster">200.000</option> 
+													<option value="linkedin">300.000</option> 
+													<option value="google">400.000</option> 
 												</select>
 											</td>
 										  </tr>
 										  <tr>
-											<td>Đính đá</td>
-											<td>2</td>
+											<td>Cạo vôi răng</td>
+											<td>1</td>
 											<td>
-												<select name="source" data-placeholder="Choose an option..." class="select-simple required">
+												<select name="source" data-placeholder="Chọn đơn giá" class="select-simple required">
 													<option></option> 
-													<option value="monster">Monster.com</option> 
-													<option value="linkedin">LinkedIn</option> 
-													<option value="google">Google</option> 
-													<option value="adwords">Google AdWords</option> 
-													<option value="other">Other source</option>
+													<option value="monster">70.000</option> 
+													<option value="linkedin">80.000</option> 
 												</select>
 											</td>
 										  </tr>
 										  <tr>
-											<td>Đính đá</td>
-											<td>2</td>
+											<td>Răng sứ</td>
+											<td>1</td>
 											<td>
-												<select name="source" data-placeholder="Choose an option..." class="select-simple required">
+												<select name="source" data-placeholder="Chọn đơn giá" class="select-simple required">
 													<option></option> 
-													<option value="monster">Monster.com</option> 
-													<option value="linkedin">LinkedIn</option> 
-													<option value="google">Google</option> 
-													<option value="adwords">Google AdWords</option> 
-													<option value="other">Other source</option>
+													<option value="monster">120.000</option> 
+													<option value="linkedin">150.000</Chọn đơn giáoption> 
 												</select>
 											</td>
 										  </tr>
 										  <tr>
-											<td>Đính đá</td>
-											<td>2</td>
+											<td>Tẩy trắng răng</td>
+											<td>1</td>
 											<td>
-												<select name="source" data-placeholder="Choose an option..." class="select-simple required">
+												<select name="source" data-placeholder="Chọn đơn giá" class="select-simple required">
 													<option></option> 
-													<option value="monster">Monster.com</option> 
-													<option value="linkedin">LinkedIn</option> 
-													<option value="google">Google</option> 
-													<option value="adwords">Google AdWords</option> 
-													<option value="other">Other source</option>
-												</select>
-											</td>
-										  </tr>
-										  <tr>
-											<td>Đính đá</td>
-											<td>2</td>
-											<td>
-												<select name="source" data-placeholder="Choose an option..." class="select-simple required">
-													<option></option> 
-													<option value="monster">Monster.com</option> 
-													<option value="linkedin">LinkedIn</option> 
-													<option value="google">Google</option> 
-													<option value="adwords">Google AdWords</option> 
-													<option value="other">Other source</option>
+													<option value="monster">700.000</option> 
+													<option value="linkedin">1000.000</option> 
 												</select>
 											</td>
 										  </tr>
@@ -1896,18 +1872,18 @@ $('.tooth-48').mouseleave(function(){
 									</div>
 									<div class="col-md-3">
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-3" id = "div-tongtien">
 										<div class="form-group">
-										<label>Tổng tiền: <span class="text-danger">*<input type="text" name="name" class="form-control required" placeholder="John Doe"></span></label>
+										<label>Tổng tiền: <span class="text-danger">*<input type="text" name="name" class="form-control required" placeholder="VND"></span></label>
 										
 									</div>
 									<div class="form-group">
 										<label>Đã trả: <span class="text-danger">*</span></label>
-										<input type="text" name="name" class="form-control required" placeholder="John Doe">
+										<input type="text" name="name" class="form-control required" placeholder="VND">
 									</div>
 									<div class="form-group">
 										<label>Còn nợ: <span class="text-danger">*</span></label>
-										<input type="text" name="name" class="form-control required" placeholder="John Doe">
+										<input type="text" name="name" class="form-control required" placeholder="VND">
 									</div>
 									</div>
 									
