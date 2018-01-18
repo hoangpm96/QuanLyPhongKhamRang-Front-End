@@ -10,152 +10,166 @@
 * ---------------------------------------------------------------------------- */
 
 $(function() {
+               // Override defaults
+               $.fn.stepy.defaults.legend = false;
+               $.fn.stepy.defaults.transition = "fade";
+               $.fn.stepy.defaults.duration = 150;
+               $.fn.stepy.defaults.backLabel = '<i class="icon-arrow-left13 position-left"></i> Back';
+               $.fn.stepy.defaults.nextLabel = 'Next <i class="icon-arrow-right14 position-right"></i>';
 
+               // Wizard examples
+               // ------------------------------
 
-    // Override defaults
-    $.fn.stepy.defaults.legend = false;
-    $.fn.stepy.defaults.transition = 'fade';
-    $.fn.stepy.defaults.duration = 150;
-    $.fn.stepy.defaults.backLabel = '<i class="icon-arrow-left13 position-left"></i> Back';
-    $.fn.stepy.defaults.nextLabel = 'Next <i class="icon-arrow-right14 position-right"></i>';
+               // Basic wizard setup
+               $(".stepy-basic").stepy();
 
+               // Hide step description
+               $(".stepy-no-description").stepy({
+                 description: false
+               });
 
+               // Clickable titles
+               $(".stepy-clickable").stepy({ titleClick: true });
 
-    // Wizard examples
-    // ------------------------------
+            //    stepy - validation;
+               //.stepy-callbacks
+               // // Stepy callbacks
+               $(".stepy-callbacks").stepy({
+                 next: function(index) {
+                   alert("Going to step: " + index);
+                 },
+                 back: function(index) {
+                   alert("Returning to step: " + index);
+                 },
+                 finish: function() {
+                   alert("Submit canceled.");
+                   return false;
+                 }
+               });
 
-    // Basic wizard setup
-    $(".stepy-basic").stepy();
+               //
+               // Validation
+               //
 
+               // Initialize wizard
+               $(".stepy-validation").stepy({
+                 validate: true,
+                 block: true,
+                 next: function(index) {
+                   if (
+                     !$(".stepy-validation").validate(validate)
+                   ) {
+                     return false;
+                   }
+                 }
+               });
 
-    // Hide step description
-    $(".stepy-no-description").stepy({
-        description: false
-    });
+               // Initialize validation
+               var validate = { ignore: "input[type=hidden], .select2-search__field", errorClass: "validation-error-label", successClass: "validation-valid-label", highlight: function(element, errorClass) { // ignore hidden fields
+                   $(element).removeClass(errorClass);
+                 }, unhighlight: function(element, errorClass) {
+                   $(element).removeClass(errorClass);
+                 },
+                 // Different components require proper error label placement
+                 errorPlacement: function(error, element) {
+                   // Styled checkboxes, radios, bootstrap switch
+                   if (element
+                       .parents("div")
+                       .hasClass(
+                         "checker"
+                       ) || element
+                       .parents("div")
+                       .hasClass(
+                         "choice"
+                       ) || element
+                       .parent()
+                       .hasClass("bootstrap-switch-container")) {
+                     if (element
+                         .parents("label")
+                         .hasClass(
+                           "checkbox-inline"
+                         ) || element
+                         .parents("label")
+                         .hasClass("radio-inline")) {
+                       error.appendTo(element
+                           .parent()
+                           .parent()
+                           .parent()
+                           .parent());
+                     } else {
+                       error.appendTo(element
+                           .parent()
+                           .parent()
+                           .parent()
+                           .parent()
+                           .parent());
+                     }
+                   } else if (element
+                       .parents("div")
+                       .hasClass(
+                         "checkbox"
+                       ) || element
+                       .parents("div")
+                       .hasClass("radio")) {
+                     // Unstyled checkboxes, radios
+                     error.appendTo(element
+                         .parent()
+                         .parent()
+                         .parent());
+                   } else if (element
+                       .parents("div")
+                       .hasClass(
+                         "has-feedback"
+                       ) || element.hasClass("select2-hidden-accessible")) {
+                     // Input with icons and Select2
+                     error.appendTo(element.parent());
+                   } else if (element
+                       .parents("label")
+                       .hasClass(
+                         "checkbox-inline"
+                       ) || element
+                       .parents("label")
+                       .hasClass("radio-inline")) {
+                     // Inline checkboxes, radios
+                     error.appendTo(element.parent().parent());
+                   } else if (element
+                       .parent()
+                       .hasClass(
+                         "uploader"
+                       ) || element
+                       .parents()
+                       .hasClass("input-group")) {
+                     // Input group, styled file input
+                     error.appendTo(element.parent().parent());
+                   } else {
+                     error.insertAfter(element);
+                   }
+                 }, rules: { email: { email: true } } };
 
+               // Initialize plugins
+               // ------------------------------
 
-    // Clickable titles
-    $(".stepy-clickable").stepy({
-        titleClick: true
-    });
+               // Apply "Back" and "Next" button styling
+               $(".stepy-step")
+                 .find(".button-next")
+                 .addClass("btn btn-primary stepy-callbacks");
+               $(".stepy-step")
+                 .find(".button-back")
+                 .addClass("btn btn-default stepy-callbacks");
 
+               // Select2 selects
+               $(".select").select2();
 
-    // Stepy callbacks
-    $(".stepy-callbacks").stepy({
-        next: function(index) {
-            alert('Going to step: ' + index);
-        },
-        back: function(index) {
-            alert('Returning to step: ' + index);
-        },
-        finish: function() {
-            alert('Submit canceled.');
-            return false;
-        }
-    });
+               // Simple select without search
+               $(".select-simple").select2({
+                 minimumResultsForSearch: Infinity
+               });
 
+               // Styled checkboxes and radios
+               $(".styled").uniform({ radioClass: "choice" });
 
-    //
-    // Validation
-    //
-
-    // Initialize wizard
-    $(".stepy-validation").stepy({
-        validate: true,
-        block: true,
-        next: function(index) {
-            if (!$(".stepy-validation").validate(validate)) {
-                return false
-            }
-        }
-    });
-
-
-    // Initialize validation
-    var validate = {
-        ignore: 'input[type=hidden], .select2-search__field', // ignore hidden fields
-        errorClass: 'validation-error-label',
-        successClass: 'validation-valid-label',
-        highlight: function(element, errorClass) {
-            $(element).removeClass(errorClass);
-        },
-        unhighlight: function(element, errorClass) {
-            $(element).removeClass(errorClass);
-        },
-
-        // Different components require proper error label placement
-        errorPlacement: function(error, element) {
-
-            // Styled checkboxes, radios, bootstrap switch
-            if (element.parents('div').hasClass("checker") || element.parents('div').hasClass("choice") || element.parent().hasClass('bootstrap-switch-container') ) {
-                if(element.parents('label').hasClass('checkbox-inline') || element.parents('label').hasClass('radio-inline')) {
-                    error.appendTo( element.parent().parent().parent().parent() );
-                }
-                 else {
-                    error.appendTo( element.parent().parent().parent().parent().parent() );
-                }
-            }
-
-            // Unstyled checkboxes, radios
-            else if (element.parents('div').hasClass('checkbox') || element.parents('div').hasClass('radio')) {
-                error.appendTo( element.parent().parent().parent() );
-            }
-
-            // Input with icons and Select2
-            else if (element.parents('div').hasClass('has-feedback') || element.hasClass('select2-hidden-accessible')) {
-                error.appendTo( element.parent() );
-            }
-
-            // Inline checkboxes, radios
-            else if (element.parents('label').hasClass('checkbox-inline') || element.parents('label').hasClass('radio-inline')) {
-                error.appendTo( element.parent().parent() );
-            }
-
-            // Input group, styled file input
-            else if (element.parent().hasClass('uploader') || element.parents().hasClass('input-group')) {
-                error.appendTo( element.parent().parent() );
-            }
-
-            else {
-                error.insertAfter(element);
-            }
-        },
-        rules: {
-            email: {
-                email: true
-            }
-        }
-    }
-
-
-
-    // Initialize plugins
-    // ------------------------------
-
-    // Apply "Back" and "Next" button styling
-    $('.stepy-step').find('.button-next').addClass('btn btn-primary');
-    $('.stepy-step').find('.button-back').addClass('btn btn-default');
-
-
-    // Select2 selects
-    $('.select').select2();
-
-
-    // Simple select without search
-    $('.select-simple').select2({
-        minimumResultsForSearch: Infinity
-    });
-
-
-    // Styled checkboxes and radios
-    $('.styled').uniform({
-        radioClass: 'choice'
-    });
-
-
-    // Styled file input
-    $('.file-styled').uniform({
-        fileButtonClass: 'action btn bg-blue'
-    });
-    
-});
+               // Styled file input
+               $(".file-styled").uniform({
+                 fileButtonClass: "action btn bg-blue"
+               });
+             });
