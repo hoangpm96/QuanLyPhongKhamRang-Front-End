@@ -6047,6 +6047,17 @@ a.list-group-item-danger:focus {
 .panel[class*=bg-] .help-inline {
   color: rgba(255, 255, 255, 0.8);
 }
+.patient-col{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.patient-row{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.panel-body:hover  {
+  filter: drop-shadow(8px 8px 10px gray);
+}
 .panel[class*=border-top-] {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
