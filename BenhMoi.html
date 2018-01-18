@@ -110,7 +110,7 @@
       $('.btn-save-teeth-details').on('click', function () {
 
         if (currentSelectedTeeth < 0) {
-          alert("Ban chưa chọn vị trí răng");
+          alert("Bạn chưa chọn vị trí răng");
           return;
         }
 
@@ -221,9 +221,8 @@
         const toothSelector = '.tooth-' + i;
         const toothParentSelector = '.tooth-' + i + '-parent';
 
-        debugger;
+        
         $(toothSelector).mouseenter(function () {
-            
             $(toothParentSelector).css('fill', '#9ce3ec');
         });
 
@@ -237,12 +236,25 @@
 
           currentSelectedTeeth = teethNumber;
 
-          if (teethDatasource[currentSelectedTeeth].length > 0) {
-            $(toothParentSelector).css('fill', '#ff0000');
-          } else {
-            $(toothParentSelector).css('fill', '#ffffff');
+             // reset all
+          for (var j = 1; j <= 32; j++) {
+            const toothSelector2 = '.tooth-' + j;
+            const toothParentSelector2 = '.tooth-' + j + '-parent';
 
-          }
+
+            if ( teethDatasource[j].teethDetails.length > 0 ){
+              $(toothParentSelector2).css('fill', '#ff0000');
+            }else {
+              if (teethDatasource[j].isSelected && j === Number(currentSelectedTeeth)) {
+                $(toothParentSelector2).css('fill', '#d721d8');
+              } else {
+                // teethDatasource[currentSelectedTeeth].isSelected = false
+                $(toothParentSelector2).css('fill', '#ffffff');
+              }
+              
+            } 
+          } 
+          
         });
 
         $(toothParentSelector).on('click',
@@ -255,20 +267,35 @@
             $('#teeth-detail-tb tbody tr').remove();
             var teethNumber = seperatedName[0].replace(/^\D+/g, '');
 
-            // if (teethDatasource[currentSelectedTeeth].length > 0) {
-            //   $(toothParentSelector).css('fill', '#e4e52f');
-            // } else {
-            //   $(toothParentSelector).css('fill', '#d721d8');
-
-            // }
             currentSelectedTeeth = teethNumber;
 
+
+            $(toothParentSelector).css('fill', '#d721d8');
+            teethDatasource[currentSelectedTeeth].isSelected = true
+
+            // hiện tại chỉ có 1 răng đc chọn 
+            for ( let j = 1 ; j <= 32; j++ ) {
+              if ( j !== Number(currentSelectedTeeth) ) {
+                teethDatasource[j].isSelected = false
+              }
+
+            }
+            debugger;
+            
+            // if (teethDatasource[currentSelectedTeeth].teethDetails.length > 0) {
+            //   $(toothParentSelector).css('fill', '#e4e52f');
+            // } else {
+              
+            //   // 2 TH: có click 
+              
+             
+            // }
             // update table detail
 
-            var data = teethDatasource[currentSelectedTeeth];
-
+            var data = teethDatasource[currentSelectedTeeth].teethDetails;
+            // debugger;  
             // update front end
-            if (data != null) {
+            if (data != null && data.length > 0) {
               var rows = "";
               data.forEach(element => {
                 rows += '<tr> <td>' +
