@@ -36,6 +36,12 @@
 	
 	 <script src="assets/js/select/bootstrap-select.js"></script>
    <style type="text/css">
+   .btnNext {
+     margin-top: 10px
+   }
+   .btnBack {
+     margin-top: 10px
+   }
    .contentHeader{
       margin-left: 15px;
     }
@@ -189,8 +195,8 @@
             return false;
           }
         });
-         $('.stepy-step').find('.button-next').addClass('btn btn-primary');
-        $('.stepy-step').find('.button-back').addClass('btn btn-default');
+         $('.stepy-step').find('.button-next').addClass('btn btn-primary btnNext');
+        $('.stepy-step').find('.button-back').addClass('btn btn-default btnBack');
 
         // Submit button
         $('.stepy-finish').on('click', function () {
@@ -394,11 +400,11 @@
       </ul>
     </div>
   
-    <div class="navbar-collapse collapse" id="navbar-mobile" hidden>
+    <div class="navbar-collapse collapse" id="navbar-mobile" >
       <ul class="nav navbar-nav" >
         <li>
           <a class="sidebar-control sidebar-main-toggle hidden-xs"  >
-            <i class="icon-paragraph-justify3"></i>
+            <!-- <i class="icon-paragraph-justify3"></i> -->
           </a>
         </li>
       </ul>
